@@ -1,0 +1,13 @@
+// Yellow Book
+
+.NETBizDBReport [id$="_tblContent"]{
+	margin: 0 0 40px;
+	// Add Border, BG
+	.moduleWrapperStyles();
+	// Add Padding to Content TDs
+   > * > * > td:first-child{ padding: 0 0 0 30px; }
+   > * > *:first-child > td{ padding: 30px 30px 0; }
+   > * > *:first-child + tr > td:first-child + td + td{ padding: 0 30px 0 0; }
+   > * > *:first-child + tr + tr > td:first-child + td{ padding: 0 30px 0 0; }
+   > * > *:first-child + tr + tr + tr > td{ padding: 0 30px 30px; }
+}

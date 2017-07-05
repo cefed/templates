@@ -1,0 +1,13 @@
+// Event Manager
+
+.NETRosterSyncUI .module{
+	// Select Event Table
+	.col-xs-12 > table:first-child{
+		+ table{
+			margin: 0 0 20px;
+			+ table{
+				.moduleWrapperStyles();border-collapse: initial;
+			}
+		}
+	}
+}

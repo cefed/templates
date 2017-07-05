@@ -1,0 +1,136 @@
+// User Profiles
+table#profilePhoto {
+    margin: 0 auto 1.42857rem;
+}
+
+.MemProfile, .MemberEdit{
+	#content > table:first-child{
+		height: 0;
+		display: block;
+	}
+	// Admin Bar
+	[id$="_tblHeader"]{
+		margin: 7rem 0 0;
+		padding: 0 !important;
+		display: inline-block;
+		width: auto;
+		//Hide Borders
+		> * > *:first-child, > * > *:nth-child(3){ display: none; }
+		// Adjust Buttons\
+	}
+	.adminbar{ padding: 0 !important; }
+	.adminbar input{ float: right; }
+	// Article Print Link
+	#printLink{
+		display: inline-block;
+		position: relative;
+		margin: 7rem 0 0;
+		float: right;
+		a{
+			.def_btn();
+			vertical-align: top;
+		}
+	}
+
+	#Table2{
+		margin: 0 0 2.85714rem;
+		// Hide Spacers
+		
+		> * > *:first-child > *:first-child, > * > *:first-child > *:nth-child(3),
+		> * > *:nth-child(2) > *:first-child, > * > *:nth-child(2) > *:nth-child(5), 
+		> * > * > .tnavBorder, > * > *:nth-child(3),
+		{ display: none; } 
+		
+		// Grab Profile Table
+		> * > * > .tnavTabON{
+			.moduleWrapperStyles(); 
+		}
+	}
+
+}
+.MemProfile{
+	[id$="tblMyProfile"]{
+		> * > tr{
+			> td:first-child{
+				padding: 0 3rem 0 0;
+			}
+			> td:last-child{
+				padding: 0 0 0 3rem;
+			}
+		}
+	}
+	[id$="_tblProfile"] > *{
+		> tr:first-child > td{ 
+			strong{
+				display: block;
+				float: left;
+				width: 75%;
+				padding: 0 0 0.5rem;
+				font: 400 2rem Tahoma, Geneva, sans-serif;
+			}
+		}
+		> tr > td:first-child{  
+			width: 25%;
+			i{
+				display: block;
+				padding: 0.5rem 1rem;
+				margin: 0 0 0.5rem;
+				background: #EEE;
+				font-style: normal;
+			}
+			b i{
+				padding: 0;
+				margin: 1.5rem 0 2rem;
+				border-bottom: 1px solid #CCC;
+				border-right: 0;
+				background: none;
+				color: #666;
+				text-transform: uppercase;
+				letter-spacing: 0.1rem;
+			}
+		}
+		> tr > td{ 
+			padding: 0 0.5rem;
+			border: none !important;
+			vertical-align: middle;
+			b{
+				display: block;
+				color: #666;
+				font-weight: 400;
+				text-align: left;
+			}
+		}
+		> tr > td:nth-child(3){
+			text-align: left;
+			padding: 0.5rem 0 0.5rem;
+			color: #666;
+		}
+		> .modRosterHiliteHiddenField{
+			> td:nth-child(3){
+				color: #888 !important;
+			}
+		}
+	}
+	#memberPhoto{
+		width: 70%;
+		margin: 0 0 0 auto;
+		~ table{ margin: 0 0 0 auto; }
+		> * > tr:nth-child(2) td{ 
+			line-height: 0;
+			input{ border: none; display: block; padding: 1rem 0.8rem 0.8rem; height: 3.1rem; width: 100% !important; margin: 0; }
+		}
+		p{ margin: 0; }
+		> * > tr:first-child{
+			img{ 
+				display: block;
+				max-width: 100%;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+.MemberEdit{
+	[id$="_tblInput"]{
+		width: 100%;
+	}
+}

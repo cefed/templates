@@ -1,0 +1,209 @@
+/* MODULES BEGIN BELOW THIS LINE */
+//Module Fonts
+$sans-font: Tahoma, Geneva, sans-serif;
+$serif-font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+$link-color: #555;
+$link-hover-color: #000;
+
+$dark-grey: #666;
+// Begin Quick Filters
+
+	//Default Button
+	@mixin def_btn(){
+		display: inline-block;	
+		vertical-align: top;
+		height: auto !important; 
+		width: auto !important;
+		padding: 1rem 1.4rem !important;
+		margin: 0 0 0 0.42857rem;
+		border: 0 !important;
+		border-radius: 0;
+		background: $link-color;
+		font-family: $sans-font;
+		font-weight: 400;
+		font-size: 1.1rem;
+		line-height: 1;
+		letter-spacing: 0.1rem;
+		color: #FFF !important;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: 0.3s;
+		&:hover, &:active{
+			background: $link-hover-color;
+		}
+	}
+
+	// Styles for the Container of the Module
+	@mixin moduleWrapperStyles(){
+		padding: 3rem !important; 
+		background: #FFF; 
+		border: 1px solid #EEE;
+		width: 100%;
+		box-shadow: 0 3px 30px 3px rgba(0,0,0,0.05);
+	}
+	// End Mixins
+	
+	[id^="masterPageUC"] .modulewrap{
+		background: #EEE;
+		background: rgb(255,255,255);
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZWVlZWVlIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);
+		background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=1 );
+		height: auto;
+		.module{
+			.abut{	
+				@include def_btn();
+			}
+		}
+	}
+	.module{ 
+		padding: 4rem 1.5rem;
+		font-family: $sans-font;
+		font-weight: 400;
+		font-size: 1.4rem;
+		line-height: 1.6;
+		color: $dark-grey;
+		// Force Admin bar to the Right
+		> .row > #content{ text-align: right; > *{text-align: left; }}
+		.modHeaderLine img{ display: none; }
+		a{color: $link-color; border: none !important;}
+		a:hover{color: $link-hover-color;}
+			
+		input, select{
+			display: inline-block;
+			padding: 3px 10px;
+			margin: 0 10px 5px 5px;
+			border: 1px solid #CCC;
+			border-radius: 0;
+			background: none;
+			box-shadow: none;
+			outline: none;
+			font-size: 1.4rem;
+		} 
+		textarea{
+			display: block;
+			padding: 3px 10px;
+			margin: 0 10px 5px 5px;
+			border: 1px solid #CCC !important;
+			border-radius: 0;
+			background: none !important;
+			box-shadow: none !important;
+			outline: none;
+		}
+		// Pagination
+		.pgpagination{
+			width: 100%;
+			text-align: center;
+			a{
+				padding: 0.5rem 1.2rem;
+				margin: 0 0.2rem;
+				border-radius: 0;
+				background: 0;
+				color: $link-color;
+				font-family: $sans-font;
+				font-weight: 400;
+				font-size: 1.4rem;
+				line-height: 1;
+				text-transform: uppercase;
+				&:hover, &:active{
+					background: $link-color;
+					color: #FFF;
+					& .active{
+						color: #fff !important;
+					}
+				}
+				&.active{
+					background: $link-color !important;
+					box-shadow: none !important;
+					text-shadow: none !important;
+					color: #FFF !important;
+				}
+			}
+		}
+		// Adjust Masterpage Admin Bar variant
+		[id$="tblAdminBar"]{
+			width: auto !important;
+			border: none !important;
+			// Ditch Padding
+			> tbody > tr > td{ padding: 0 !important; }
+		}
+		
+		// Set Default "Admin Bar" font and color
+		.adminbar, .adminBar{
+			padding: 0 10px !important;
+			font-family: $sans-font;
+			font-weight: 400;
+			font-size: 1.2rem;
+			line-height: 1;
+			letter-spacing: 0.01rem;
+		}
+		
+		// General Titles 
+		.plgHeaderBar{
+			position: absolute;
+			top: 0;
+			left: 15px;
+			right: 15px;
+			border-bottom: 1px solid #DDD;
+			font-family: $serif-font;
+			font-weight: 400;
+			font-size: 2.8rem;
+			line-height: 1;
+			color: #444;
+			text-transform: uppercase;
+		} 
+	}
+// Begin Importing Other Modules 
+	//Import Layout Parts
+	@import "Includes/_tabbed_navigation.scss";  
+	// Articles
+	@import "Includes/article_listing.scss";
+	@import "Includes/article_view.scss";
+	
+	//Calendar 
+	@import "Includes/calendar.scss";
+	@import "Includes/event_view.scss";
+	
+	//Directory
+	@import "Includes/member_roster.scss"; // Done
+	@import "Includes/mem_profile.scss"; // Done
+
+	//Inbox
+	@import "Includes/memberinbox.scss"; // Done
+	@import "Includes/cvm.scss"; // Done
+	@import "Includes/email_ui_main.scss"; //  Done
+	@import "Includes/ce_dynamicgroups.scss"; // Done
+	
+	//Others
+	@import "Includes/event_manager.scss"; // Done
+	@import "Includes/global_notifications.scss"; // Done
+	@import "Includes/biz_db_report.scss"; //  Done
+	@import "Includes/site_stats.scss"; // Done
+	@import "Includes/sites_config.scss"; // Done
+	@import "Includes/poll_manager.scss"; // Done
+	@import "Includes/site_stats_main.scss"; //  Done
+	@import "Includes/site_stats_sessions.scss"; // Done
+	@import "Includes/active_user_listing.scss"; // Done
+	@import "Includes/profile_update_report.scss"; // Done
+	@import "Includes/site_config.scss"; //  Done
+	@import "Includes/survey_manager.scss"; // Done
+	@import "Includes/firstimpression_landing.scss"; // Done
+	@import "Includes/formlanding.scss"; // Done
+	@import "Includes/supportcontacts.scss"; // Done
+// End Importing Other Modules
+
+// Adjust Telerik
+	@import "Includes/telerik.scss"; // Done
+// End
+	body.meetings{
+		.meeting-scheduler-wrap{
+			padding-top: 30px;
+			> .plgHeaderBar{
+				padding-bottom: 10px;
+			}
+		}
+	}
+
+/* MODULES END HERE */

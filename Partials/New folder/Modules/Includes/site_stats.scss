@@ -1,0 +1,12 @@
+// CE Stats
+[id$="imgButInvisibleRefresh"]{ visibility: hidden; }
+.NET_SiteStats [id$="tabMainContent"] span.icon{
+	display: none;
+}
+.NET_SiteStats #content{
+	// Access Content TD
+	[id$="_pnlTView"]{ 
+		// Add Padding, BG, and Border
+		.moduleWrapperStyles();
+	}
+}

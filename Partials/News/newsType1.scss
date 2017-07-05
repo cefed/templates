@@ -1,0 +1,35 @@
+.news-1{
+	padding: 25px 30px;
+	h2{
+		margin-bottom: 25px;
+	}
+	.view-button{
+		padding-left: 30px;
+		background-position: 0px 50%;
+		&:hover, &:active{
+			background-position: -5px 50%;
+			text-decoration: none;
+		}
+	}
+	.newsItem a {
+		display: block;
+		font-size: 19px;
+		line-height: 1.2;
+	}
+	.newsItem a:hover {
+		text-decoration: none;
+		color: #555;
+	}
+	.newsItem {
+		margin-bottom: 20px;
+	}
+	.newsItem .article-date {
+		text-transform: uppercase;
+		font-size: 11px;
+		letter-spacing: 2px;
+		color: #999;
+	}
+	@media (max-width: 991px) {
+		margin-top: 50px;
+	}
+}

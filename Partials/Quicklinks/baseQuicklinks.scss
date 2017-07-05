@@ -1,0 +1,57 @@
+// General Styles & Classes 
+[class^="quicklinks-"]{
+	&.mp-bg{ //Client Editable Background (Has MiniPage Background)
+		padding: 80px 0; // Ensure extra white space for Link Container
+		@media(max-width: 1199px){
+			padding: 50px 0;
+		}
+		@media(max-width: 768px){
+			padding: 20px 0;
+		}
+	}
+	ul, li{
+		display: inline-block;
+		vertical-align: top;
+		padding: 0; margin: 0;
+	}
+	ul{ font-size: 0; } // Removes gaps in inline-block
+	li{ font-size: $font-size; } // Sets size back to normal
+	&.list{ // Default List View
+		ul, li{
+			width: 100%;
+		}
+		li{ margin: 0 0 5px; }
+	}
+	&.three-col{ // Three Column Layout
+		text-align: center;
+		ul{ width: 100%; max-width: 900px; }
+		li{ width: 33.333333333%; padding: 10px; }
+		@media(max-width: 991px){
+			li{ width: 50%; }
+		}
+		@media(max-width: 768px){
+			li{ width: 100%; }
+		}
+	}
+	&.four-col{ // Four Column Layout
+		text-align: center;
+		ul{ width: 100%; max-width: 900px; }
+		li{ width: 25%; padding: 10px; }
+		@media(max-width: 991px){
+			li{ width: 50%; }
+		}
+		@media(max-width: 768px){
+			li{ width: 100%; padding: 10px; }
+		}
+	}
+}
+		
+                
+/********** TYPE 1 **********/
+@import "quicklinksType1.scss";
+
+/********** TYPE 2 **********/        
+@import "quicklinksType2.scss";
+
+/********** TYPE 3 **********/  
+@import "quicklinksType3.scss";

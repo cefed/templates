@@ -1,0 +1,28 @@
+.events-4{
+	border-right: 1px solid rgba(0, 0, 0, .2);
+	table>tbody>tr:first-of-type{ display: none; }
+	.view-button{ margin-top: 20px; }
+	h2{
+		font-size: 27px;
+		margin: 10px auto 20px;
+	}
+	.cal-date{
+		font-size: 11px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: $color2;
+	}
+	.cal-title{
+		font-size: 18px;
+	}
+	.event-title{
+		font-size: 18px;
+		margin-bottom: 25px;
+		display: block;
+		line-height: 1.2;
+	}
+	@media (max-width: 991px){
+		border: none;
+		text-align: center;
+	}
+}

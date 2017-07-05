@@ -1,0 +1,17 @@
+.newsPluginArchiveLink{ display: none; }
+// Archive Button Icon
+.archive-icon{ 
+	background-image: url(FED_Private_Templates_css/images/archive.png);
+}
+ 
+/********** TYPE 1 **********/
+@import "newsType1.scss";
+
+/********** TYPE 2 **********/
+@import "newsType2.scss";
+
+/********** TYPE 3 **********/
+@import "newsType3.scss";
+
+/********** TYPE 4 **********/
+@import "newsType4.scss";

@@ -1,0 +1,27 @@
+.content-banner-1{
+	position: relative;
+	background: #444;
+	> .mpContent img {
+		width: 100%;
+		opacity: 0.5;
+	}
+	> .clickToEditDiv {
+		position: absolute;
+		bottom: 20px;
+		left: 0;
+		right: 0;
+	}
+	.page-title {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: center;
+		.mpContent {
+			font-family: serif;
+			font-size: 36px;
+			color: #FFF;
+		}
+	}
+}

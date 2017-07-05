@@ -1,0 +1,108 @@
+.events-2{
+	overflow: auto;
+	text-align: center;
+	h2{
+		margin-bottom: 0
+	}
+	.cal-img{
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		height: 200px;
+		background-color: #fff;
+		background-image: $bg-image;
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: cover;
+	}
+	.cal-img:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		top: 0;
+		background: $color1;
+		opacity: .5;
+		z-index: 2;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s
+	}
+	a:hover .cal-img:before{
+		bottom: 100%
+	}
+	a:hover{
+		color: $color1;
+		text-decoration: none;
+	}
+	.cal-title{
+		height: 60px;
+		text-align: left;
+		font-size: 25px;
+		padding-top: 23px;
+		background: url(FED_Private_Templates_css/images/dark-right-angle.png);
+		background-repeat: no-repeat;
+		background-position: 100% 23px;
+		overflow: hidden;
+		padding-right: 20px;
+		line-height: 1.1;
+	}
+	.cal-event img.event-img{
+		width: 100%;
+		height: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+		position: relative;
+		z-index: 1;
+		margin-bottom: 0
+	}
+	.cal-event .cal-date{
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		text-align: center;
+		padding: 0 5px;
+		color: #fff;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+		z-index: 10;
+		text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+	}
+	.cal-date span.calDay{
+		font-size: 32px;
+		font-weight: 700;
+		font-family: $font1
+	}
+	.cal-date span.calDaySuffix{
+		display: none;
+	}
+	.cal-date br{
+		display: none
+	}
+	.cal-date span.calMonth{
+		font-family: $font1
+	}
+	@media (max-width: 1200px){
+		.cal-title{
+			padding-top: 19px;
+			font-size: 19px;
+			background-position: 100% 13px;
+		}
+	}
+	@media (max-width: 766px) {
+		a{
+			width: 50%
+		}
+	}
+	@media (max-width: 625px){
+		a{
+			width: 100%
+		}
+		.cal-title{
+			height: auto;
+		}
+		padding-top:10px;
+	}
+}

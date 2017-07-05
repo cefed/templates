@@ -1,0 +1,17 @@
+// Survery Manager
+
+.v35SurveyManager, .NETSrvyMain{
+	#Table1{
+		margin: 0 0 40px;
+		> tbody > tr:first-child + tr > .tnavTabON{
+			.moduleWrapperStyles();
+		}
+		.modArticlesDayHeader{
+			background: @LinkColor;
+			color: #FFF;
+		}
+	}
+	.modSurveyEditDividerHdr{
+		padding: 0 0 30px;
+	}
+}

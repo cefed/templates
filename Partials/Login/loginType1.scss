@@ -1,0 +1,207 @@
+.login-1{
+	height: 100%;
+	.login-bg{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 0;
+		.mpContent{
+			height: 100%; width: 100%;
+			background-size: cover; background-position: 50% 50%;
+		}
+		.clickToEditDiv{
+			position: absolute; bottom: 20px; right: 20px;
+		}
+		@media(max-width: 768px){
+			display: none;
+		}
+	}
+	.login-section{
+		position: relative; z-index: 1; display: table; height: 100%; width: 100%; 
+		> div{ display: table-cell; vertical-align: middle;
+			@media(max-width: 767px){
+				display: block;
+				vertical-align: top;
+				overflow: auto;
+			}
+		}
+		@media(max-width: 767px){
+			display: block;
+			vertical-align: top;
+			overflow: auto;
+		}
+	}
+	.login-logo{
+		display: block;
+		border: none!important;
+		position: relative;
+		margin: 0 0 3rem;
+		img{ max-width: 100%; }
+		@media(max-width: 768px){
+			margin: 0 0 1rem;
+			transform: none;
+		}
+	}
+	.login-inner{
+		width: 100%;
+		max-width: 540px;
+		margin: 0 auto;
+		padding: 7rem 10rem;
+		text-align: center;
+		color: #767676;
+		background: #FFF;
+		font-size: 0;
+		overflow: hidden;
+		@media(max-width: 1199px){
+			padding: 4rem 8rem;
+		}
+		@media(max-width: 768px){
+			padding: 3rem;
+		}
+		@media(max-width: 400px){
+			padding: 2rem 1.5rem;
+		}
+		table{
+			margin: 0 auto 5rem !important;
+			font-size: 1.6rem;
+			td{ vertical-align: middle; text-align: center !important; }
+			a{
+				font-size: 1.4rem;
+				letter-spacing: 0.1rem;
+				text-transform: uppercase;
+			}
+		}
+		p{
+			padding: 0 1rem;
+			font-size: 1.6rem;
+			color: #767676;
+			margin: 0 0 2rem;
+		}
+		.abut{
+			display: inline-block;
+			padding: 15px 35px;
+			border: none;
+			font-family: sans-serif;
+			font-size: 11px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			color: #FFF;
+			-webkit-transition: .3s;
+			transition: .3s;
+			text-decoration: none!important;
+			background: rgb(51, 51, 51);
+			&:hover, &:active{
+				background: #000;
+			}
+		}
+	}
+	.login_input{
+		width: 100%;
+		margin: 0 auto 2rem;
+		input{
+			width: 100%; height: auto;
+			border: 1px solid #DDD;
+			padding: 8px 15px;
+			font-family: sans-serif;
+			font-size: 15px;
+			line-height: 1.5;
+			color: #AAA;
+			outline: none;
+			&:focus{
+				border: 1px solid #555;
+				color: #555;
+			}
+		}
+	}
+	#login_link{
+		width: 100%;
+		padding: 0 0 1rem;
+		text-align: center;
+	}
+	#login_cookieMessage{
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		padding-top: 1rem;
+		text-align: left;
+		input[type="checkbox"]{
+			display: none;
+			+ label{
+				position: relative;
+				display: inline-block;
+				margin: 0 0 0 3rem;
+				font-size: 1.3rem;
+				font-family: sans-serif;
+				font-weight: 300;
+				line-height: 1;
+				color: #555;
+				border-bottom: 1px solid transparent;
+				&:hover{
+					color: #000;
+					cursor: pointer;
+					border-bottom: 1px solid;
+				}
+			}
+			+ label:before{
+				content: '';
+				position: absolute;
+				left: -3rem;
+				top: 50%; transform: translateY(-50%);
+				display: inline-block;
+				width: 21px;
+				height: 21px;
+				padding: 4px 0 0 4px;
+				border-radius: 100%;
+				border: 1px solid #555;
+				background: none;
+				speak:none;
+				font-family:IcoMoon-Ultimate;
+				font-size: 1rem;
+				font-style:normal;
+				font-weight:400;
+				font-variant:normal;
+				line-height:1;
+				text-transform:none;
+				-webkit-font-feature-settings:"liga";
+				-moz-font-feature-settings:"liga=1";
+				-moz-font-feature-settings:"liga";
+				-ms-font-feature-settings:"liga" 1;
+				-o-font-feature-settings:"liga";
+				font-feature-settings:"liga";
+				-webkit-font-smoothing:antialiased;
+				-moz-osx-font-smoothing:grayscale;
+			}
+			&:checked{
+				+ label:before{
+					content: "\ed6c";
+					color: #000;
+					border: 1px solid #000;
+				}
+				+ label:hover:before{
+					color: #000;
+					border: 1px solid #000;
+				}
+			}
+		}
+	}
+	#login_forgotPassword{
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		padding-top: 1rem;
+		text-align: right;
+		a{
+			font-size: 1.3rem;
+			font-family: sans-serif;
+			line-height: 1;
+			color: #555;
+			border-bottom: 1px solid transparent;
+			&:hover, &:active{
+				color: #000;
+				border-bottom: 1px solid;
+			}
+		}
+	}
+}

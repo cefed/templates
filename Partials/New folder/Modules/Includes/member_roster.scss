@@ -1,0 +1,238 @@
+//MemberRoster
+.v35Directory, .MemberRoster, .AddMembership{
+
+	// Hide Spacers
+	[width="1"], [height="1"] { display: none; }
+	
+	// Title
+	#content > table:first-child{
+		display: block;
+		height: 0;
+		margin: 0 0 10px;
+	}
+	// Admin Bar
+	[id$="tblHeader"]{
+		position: absolute;
+		margin: 6rem 0 0;
+		right: 6.3rem;
+		width: auto;
+		//Hide Borders
+		> * > *:first-child, > * > *:nth-child(3){ display: none; }
+		
+		// Add Spacing
+		td:first-child{ padding: 0 2.7rem 0 0 !important; }
+		
+
+	}
+		// Adjust Buttons
+	.adminbar{ padding: 0 0 0 1rem !important; + .adminbar{ } }
+	.adminbar input{ margin: 0 0 0 0.5rem; float: left; }
+	.RosterRowHidden{
+		color: #8A0A0A !important;
+		&:hover{
+			color: #540808 !important;
+		}
+	}
+	
+	// Article Print Link
+	#printLink{
+		margin: 6rem 0 0;
+		float: right;
+		a{
+			.def_btn();
+		}
+	}
+
+	// Access Roster Table
+	.tnavTabON[width="99%"]{ 
+		.moduleWrapperStyles();
+	}
+
+	// Disclaimer Text
+	[id$="_tblAdminStuff"]{
+		+ table{
+			*{ display: block; }
+			td:first-child{ 
+				display: none;
+			}
+		}
+	}
+}
+//Quick Search
+	// Left Panel (Filters)
+	[id$="rosterControl_Panel2"]{
+		padding: 0 0 2rem !important;
+	}
+	// Show All Members Button
+	[id$="rosterControl_lbShowAll"]{
+		font-family: Tahoma, Geneva, sans-serif;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+	}
+			
+	// Directory Quick Filter Inputs
+		// Reusable Class
+		.qFilter(){
+			width: 20%;
+			&.label{
+				font{
+					font-family: Tahoma, Geneva, sans-serif;
+					font-size: 1.2rem;
+					font-weight: 400;
+					color: #9D9D9D;
+					letter-spacing: 0.14285rem;
+					text-transform: uppercase;
+				}
+			}
+			&.control{
+				input{
+					padding: 0.3rem 1rem;
+					margin: 0.3rem 0 0;
+					height: 3rem;
+					outline: none;
+					font-family: Tahoma, Geneva, sans-serif;
+					font-size: 1.2rem;
+				} 
+			}
+		} 
+		[class^="qFilter"]{
+			.qFilter();
+			&.control input{ width: 100% !important; }
+		}
+		.qFilterButton{ 
+			.qFilter();
+			&.control input{ margin: 0.3rem 0 0 0 !important; font-size: 1.1rem; }
+		} 
+	// End Directory Quick Filter Inputs	
+// End Quick Search
+
+//Listing Table
+[id$="rosterControl_tblListing"]{
+	td{ padding: 1.5rem 0; }
+	// Heading Row
+	.RosterColumnTitle{ 
+		td{ 
+			padding: 0.5rem 1rem; 
+			font-size: 1.2rem;
+			border-bottom: .1rem dashed #ccc;
+			border-top: .1rem dashed #ccc;
+			b{ font-weight: 400; }
+			u{ text-decoration: none; }
+		}
+	}
+	.RosterRowOff{ background: #EEE; }
+	.RosterRowOn{ background: #FFF; }
+
+	// Profile Result
+	[class^="RosterRow"]{
+		> td:nth-child(2){ text-align: right; }
+		> td{
+			font: 400 1.5rem/1 Tahoma, Geneva, sans-serif;
+			letter-spacing: 0.1rem;
+			color: #222;
+			text-transform: none !important;
+			b{ font-weight: 400; }	
+		}
+	}
+}
+
+// End Listing Table
+
+//Letter Picker
+	[id*="rosterControl_tblLetter"]{
+		font: 400 1.2rem/1 Tahoma, Geneva, sans-serif;
+		font-size: 1.2rem; line-height: 1;
+		text-transform: uppercase;
+		border-bottom: 0.1rem solid #DDD;
+		border-top: 0.1rem solid #DDD;
+		margin: 0 0 2rem;
+		td{ text-align: center !important; padding: 0;}
+		td[class$="n"]{
+			color: #6D6D6D !important;
+			background: #EEE;
+			font-weight: 600;
+		}
+		td[class$="f"]{
+			color: @ModuleButtonColor;
+			&:hover{
+				color: @ModuleButtonHoverColor;
+				background: #EEE;
+			}
+
+		}
+	}
+	[id$="rosterControl_tblLetters"]{ margin: 2rem 0; }
+	[id$="rosterControl_tblLetterBarBottom"]{ margin: 2rem 0 0; } //Spacing for Top Bar
+// End Letter Picker
+
+// Roster Results - Roster Control
+[id$="rosterControl_tblResultsShell"] > *{
+	//Adjust Header
+	> *:nth-child(2){ float: left; 
+		> td b{ font-size: 1.4rem; font-weight: 400; text-transform: uppercase; } 
+	}
+	> *:nth-child(3){ float: right; margin: 0.4rem 0 0; 
+		> td a{ font-size: 1rem; text-transform: uppercase; } 
+	}
+}
+
+// User Statistics
+[id$="rosterControl_rapLoginReport"]{
+	font: 400 1.4rem/1 Tahoma, Geneva, sans-serif;
+	> table:first-child{
+		td{
+			padding: 0 1.2rem 0 0;
+			text-transform: uppercase;
+			font-size: 1.2rem;
+			&:last-child{
+				padding: 0;
+				a{
+					font-size: 400 1.2rem/1 Tahoma, Geneva, sans-serif;
+				    font-family: Tahoma, Geneva, sans-serif;
+					text-transform: uppercase;
+					letter-spacing: 0.1rem;
+				}
+				
+			}
+		}
+		.RadPicker input{
+			height: 3rem !important;
+			padding: 0.3rem 1rem !important;
+		}
+		[id$="rosterControl_lbShowAll"]{
+			float: none;
+		}
+	}
+}
+[id$="rosterControl_tblClients"]{
+
+}
+// End User Statistics
+
+// Roster Search - Roster Control
+
+[id$="rosterControl_tblInput"]{
+	i{
+		font-style: normal;
+	}
+}
+
+// End Roster Search
+
+// Roster Export
+[id$="rosterControl_btnAdd"]{
+	margin-bottom: 2rem !important
+}
+// End Roster Export
+
+
+// My Profile
+[id$="MyProfile"]{
+	[id$="ProfilePage"]{
+		td:first-child{
+			width: 40%;
+		}
+	}
+}
+// End My Profile

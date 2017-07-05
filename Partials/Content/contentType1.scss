@@ -1,0 +1,27 @@
+.inner-content-1{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    max-width: 1200px;
+    padding: 60px 15px;
+    margin: 0 auto;
+	> div{ display: table-row; }
+	> div > *{
+		display: table-cell; vertical-align: top;
+		
+	}
+	aside{
+		width: 30%;
+	}
+	article{
+		width: 70%;
+	}
+	@media(max-width: 991px){
+		display: block;
+		padding: 30px 15px;
+		> div{ display: table; width: 100%; }
+		> div > *{ width: 100% !important; }
+		> div > *:first-child{ display: table-footer-group; }
+		> div > *:last-child{ display: table-header-group; margin: 0 0 20px; }
+	}
+}

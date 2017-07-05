@@ -1,0 +1,92 @@
+// Article Listing
+[class*="ArticleList"]{
+	// Hide Spacers
+	[width="1"], [height="1"] { display: none; }
+	
+	// Admin Bar
+	.adminbar{
+		padding: 0 !important;
+		display: inline-block;
+		margin: 3.6rem 0 0;
+		input{ margin: 0 0 0 0.1rem !important; }
+		td:first-child{ padding: 0 1.9rem 0 0 !important; }
+	}
+	
+	// Article Print Link
+	.articlePrintLink{
+		margin: 3.6rem 0 0 0.5rem;
+		float: right;
+		a{
+			@include def_btn();
+			margin: 0;
+		}
+	}
+	// Add Border, BG, Padding to Content TD
+	.tnavTabON[width="100%"]{ 
+		@include moduleWrapperStyles();
+	}
+	
+	// Quick Filters
+	[id$="_QuickFilter"]{ 
+		> tbody > tr > .tnavTabON{ padding: 0 !important; }
+		[id$="_lblFilterText"]{ 
+			font{
+				font-size: 1.2rem;
+				letter-spacing: 0.1rem;
+				text-transform: uppercase;
+				display: block;
+			}
+		}
+		.abut{
+			margin: 0 0 2.8rem !important;
+		}
+		#filterdiv1{
+			margin: -1.5rem 0 0;
+
+		}
+	}
+	[id$="_QuickFilterTable"]{
+		border-color: #CCC !important;
+		width: 300px;
+		br{ display: none; }
+		input{ width: auto; }
+		td{ padding: 1rem 1.5rem !important; text-align: left; }
+		td:nth-child(2){ text-align: right; }
+		tr:first-child > td{ border-bottom: 0.1rem solid #CCC; }
+		tr:last-child > td{ border-top: 0.1rem solid #CCC; }
+		a{
+			display: block;
+			margin: -1rem -1.5rem;
+			padding: 1rem 1.5rem;
+		}
+	}
+	// Article Table
+	[id$="_tblArticles"]{
+		position: relative;
+		tr:first-child, img{ display: none; }
+		// Header Row
+		[colspan="6"]{ padding: 2rem 0; text-align: center; }
+		tr:nth-child(5) [colspan="5"]{ padding: 8rem 0; font-size: 2rem; text-align: center; text-transform: uppercase; }
+	}
+	
+	// Article Title
+	.articleTitleRow{
+		td{ padding: 1rem 0; }
+		a{ font-size: 1.5rem; text-transform: uppercase; }
+		span{
+			margin-left: 1rem;
+			a{
+			    display: inline-block;
+				padding: 0.2rem 0.5rem;
+				font-size: 1.3rem;
+				text-transform: lowercase;
+			}
+		}
+	}
+	
+	// Article Summary
+	.articleSummaryRow{
+		td{ padding: 0.5rem 0 3rem; border-bottom: 3rem solid #FFF; background: #EEE; }
+		td:nth-child(3){ padding: 3rem 2rem; }
+	}
+}// End Articles

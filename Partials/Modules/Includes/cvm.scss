@@ -1,0 +1,16 @@
+// Inbox CVM
+.NETCVM #content{
+	// Hide Spacers
+	[width="1"], [height="1"], [style="width:5%;"] { display: none; }
+	
+	> [align="center"]{
+		margin: 30px 0 40px;
+	}
+	// Add Border, BG, Padding, Base Fontsize to Content TD
+	.tnavTabON[width="99%"]{ 
+		@include moduleWrapperStyles();
+		// Change Internal Elements ( P, List, etc)
+		font: 400 1.4rem/1.6 Tahoma, Geneva, sans-serif;
+		> br{ display: none; }
+	}
+}

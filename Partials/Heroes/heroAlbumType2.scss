@@ -1,0 +1,83 @@
+/* HERO ALBUM TYPE 2 */
+.featured-hero-2{
+	padding: 70px 15px;
+	background: $color1;
+	.prv-max-width > table{ // Settings Table
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 25px;
+		z-index: 10;	
+	}
+	.hero-wrap{ // Used to ensure IE9 Compatability
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		> div{ display: table-row; }
+	}
+	.hero-img{
+		display: table-cell; width: 60%;
+		background-size: cover;
+		background-position: 50% 50%;
+		position: relative;
+		img{
+			//IMG is necessary for some spacing conflicts but can be hidden. By setting a max-height, you can control the maximum height the album will scale outside of the content, useful for really large screen sizes (1900+)
+			width: 100%; max-height: 400px; opacity: 0; 
+		}
+	}
+	ul.counter{
+		position: absolute;
+		left: 0; right: 0; bottom: 0;
+		padding: 10px;
+		text-align: center;
+	}
+	.hero-desc{
+		display: table-cell; width: 40%;
+		vertical-align: middle;
+		padding: 20px 20px 20px 100px;
+		text-align: left;
+		text-shadow: 2px 0 2px rgba(0,0,0,0.5);
+		@media(max-width: 1199px){
+			padding: 20px 20px 20px 50px;
+		}
+		@media(max-width: 991px){
+			padding: 20px;
+		}
+	}
+	.hero-desc span{
+		color: #fff;
+		font-size: 14px;
+		font-weight: 300;
+		font-family: sans-serif;
+	}
+	.hero-desc h2{
+		color: #fff;
+		font-size: 30px;
+		margin: 20px 0;
+	}
+	.hero-desc p{
+		color: #fff;
+		font-weight: 300;
+		line-height: 1.8;
+		margin-bottom: 30px;
+		font-family: sans-serif;
+		font-size: 14px;
+	}
+	.hero-btn{
+		color: #fff;
+		border: 2px solid #fff;
+		&:hover, &:active{
+			background: rgba(0,0,0,0.7);
+		}
+	}
+	@media (max-width: 991px) {
+		padding: 30px 15px;
+		.hero-wrap{ // Used to ensure IE9 Compatability
+			display: block;
+			width: 100%;
+			> div{ display: block; }
+			> div > div{ display: block; width: 100% !important; max-width: 700px; margin: 0 auto; text-align: center; }
+		}
+	}
+
+}

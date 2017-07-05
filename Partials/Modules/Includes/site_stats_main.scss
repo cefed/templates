@@ -1,0 +1,45 @@
+// Usage Stats Main
+
+.SiteStatsMain{
+	[id$="cblDisplayStat"]{
+		border-collapse: collapse;
+		width: 300px;
+		display: inline-block;
+		text-align: left;
+		tr {
+			display: inline-block;
+			width: 50%;
+			td{
+			    display: inline-block;
+				width: 100%;
+				input{
+				    vertical-align: top;
+					margin: 3px 10px 5px 5px;	
+				}
+				label{
+				    width: 70%;
+				}
+				nobr{
+					white-space: normal;
+				}
+			}
+		}
+	}
+}
+
+.SiteStatsMain #siteStatisticsWrapper > table{
+	margin: 0 0 40px;
+	// Hide Spacing Rows / Columns
+	> tbody > tr:first-child + tr + tr
+	{ display: none; }
+	// Access Content TD
+	> tbody > tr:first-child + tr > .tnavTabON{
+		// Add Border, BG, padding
+		@include moduleWrapperStyles();
+	}
+	.RadToolTip .rtWrapper{
+		table-layout: fixed;
+		width: 300px;
+	}
+
+}

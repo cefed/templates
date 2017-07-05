@@ -1,0 +1,79 @@
+// Inbox
+
+.v35MessageCenter #content, .NET_MemberInbox #content{
+	padding: 25px 15px 0;
+	[id$="tblMessages"],[id$="tblScheduledMessages"]{
+		> * > tr:first-child{
+			background: $link-color;
+			color: #FFF;
+			> td{
+				padding: 15px;
+				vertical-align: middle;
+				a{
+					color: #FFF !important;
+					line-height: 1.5;
+					display: inline-block;
+					text-align: center;
+					img{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	// Mail Reporting Link
+	[id$="_trMailReport"]{
+		display: inline-block;
+		width: auto !important;
+		color: #DDD;
+		float: right;
+		a{
+			@include def_btn();
+			float: right;
+			img{ margin: -2px 0 -2px 3px; }
+		}
+	}
+
+	// Access Inbox Table
+	> *[align="center"]{
+		margin: 0 0 40px;
+		position: relative;
+		.rosterletteroff{
+			background: $link-color;
+			color: #FFF;
+			> td{
+				padding: 5px 15px;
+				vertical-align: middle;
+				&:first-child{
+					width: 35%;
+				}
+			}
+		}
+		// Hide Spacing Row / Columns
+		> * > tr > td{ display: none; }
+		
+		// Show Menu
+		> * > tr:first-child > td:nth-child(2){ display: table-cell; width: 100%; }
+		> * > tr:nth-child(2) > td:nth-child(2){ display: table-cell; width: 100%; }
+		
+		// Rehide border
+		> * > tr > .tnavBorder{ display: none !important; }
+	
+		// Add Border, BG, Padding to Content TD
+	   > * > tr > .tnavTabON{ 
+			display: table-cell;
+			width: 100%;
+			@include moduleWrapperStyles();
+	   }
+	   
+	   // Get rid of bulky border from compose box
+	    [id$="_litHTML"]{
+		   iframe:first-child{
+			   border: 1px solid #CCC !important;
+			   margin: 0 0 10px !important;
+			   padding: 20px !important;
+		   }
+	   }
+	}
+}

@@ -1,0 +1,41 @@
+// Support Contacts
+.SupportContacts{
+	// Select Event Table
+	#content > table + table{
+		@include moduleWrapperStyles();
+		display: block;
+	}
+	.plgHeaderBar{
+		position: relative;
+		left: 0;
+		right: 0;
+		padding: 0 0 10px;
+		overflow: auto;
+		height: auto;
+		text-align: center;
+		b{
+			font-weight: 400;
+			display: block;
+			padding: 0 0 10px;
+			border-bottom: 1px solid #CCC;
+		}
+	}
+	.plgHeaderBorder{
+		border-bottom: 1px solid #CCC;
+	}
+	tr[id$="Group"], tr[id$="trAM"], tr[id$="trAM"] + tr{
+		tbody, tr, td{
+			display: inline-block;
+			width: 100%;
+			border: none !important;
+			overflow: auto;
+			height: auto !important;
+		}
+		table table{
+			width: 100% !important;
+			td{
+				width: 25% !important;
+			}
+		}
+	}
+}

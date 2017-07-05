@@ -1,0 +1,21 @@
+// Profile Update Report
+.v35ProfileUpdateReport{
+	// Hide Spacers
+	[width="1"], [height="1"] { display: none; }
+	#content{
+		> *:first-child + *{ margin: 3rem 0 0; }
+		
+		[id$="_tblSavedReports"], [id$="_tblNewReportSetup"]{ .moduleWrapperStyles(); }
+		[id$="_tblSavedReports"]{ 
+			border-bottom: 0; 
+			td{ padding: 0 30px; }
+			tr:first-child td{ padding: 30px 30px 0; }
+		}
+		[id$="_tblNewReportSetup"]{ 
+			border-top: 0;
+			> * > * > *{
+				padding: 0 30px;
+			}
+		}
+	}
+}

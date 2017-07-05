@@ -1,0 +1,184 @@
+/*Panel Bar Stylesheet
+version 2
+Author: Jason Nolfi*/
+
+/*Minified
+*/
+
+/*fine tuning - RESET STYLES */
+.panel-wrap .RadPanelBar_Template,
+.panel-wrap .RadPanelBar_Template .rpRootGroup,
+.panel-wrap .RadPanelBar_Template .rpItem,
+.panel-wrap .RadPanelBar_Template .rpLink,
+.panel-wrap .RadPanelBar_Template .rpOut,
+.panel-wrap .RadPanelBar_Template .rpText,
+.panel-wrap .RadPanelBar_Template .rpGroup {
+background:transparent;
+border:none;
+margin:0;
+padding:0;	
+}
+
+
+.panel-wrap {text-align:center;}
+/*Main Div Wrap*/
+.panel-wrap .RadPanelBar_Template
+{
+	background:none;
+	margin:0 auto;
+}
+
+/*UL class*/
+.panel-wrap .RadPanelBar_Template .rpRootGroup
+{
+	border:none;
+}
+
+
+/*A class*/
+.panel-wrap .RadPanelBar_Template .rpLink
+{
+	background-image:none;
+	color:#6f5c52;
+    text-decoration: none;
+	font-size: 13px;
+    font-weight: normal;
+    line-height: 25px;
+	cursor: pointer;
+	text-align:center;
+	padding:0;
+	font-family:Raleway, "Lucida Sans", Verdana, sans-serif;
+	text-transform:uppercase;
+	position: relative;
+}
+
+
+/*A:hover*/
+.panel-wrap .RadPanelBar_Template .rpLink:hover {
+color:#c38b4e; /*added style to give link hover effect -> delete this style if no text effect on hover*/
+background-color:transparent;
+text-decoration:none;
+}
+
+
+
+/*RPTEXT is span that wraps text - this padding style overrides the Telerik stylesheet*/
+.panel-wrap .RadPanelBar_Template .rpText {
+padding: 0;	
+}
+
+/*1st span class*/
+.panel-wrap .RadPanelBar_Template .rpOut
+{
+	border: none; /*overwrites template.css*/
+}
+
+/*FROM CLEANED STYLE SHEET -> Removes Telerik 1px padding on :hover*/
+.panel-wrap .RadPanelBar_Template .rpLink .rpOut,
+.panel-wrap .RadPanelBar_Template .rpFocused .rpOut, 
+.panel-wrap .RadPanelBar_Template .rpLink:hover .rpOut, 
+.panel-wrap .RadPanelBar_Template .rpSelected .rpOut, 
+.panel-wrap .RadPanelBar_Template .rpSelected:hover .rpOut {
+	padding-bottom: 0px !important;	/* overrides Telerik Default on :hover { padding-bottom:1px } */
+	border: 0;
+	
+}
+
+/*On click classes
+rpFocused = on Click
+rpExpanded = when clicked and opended
+*/
+.panel-wrap .RadPanelBar_Template .rpFocused,
+.panel-wrap .RadPanelBar_Template .rpExpanded,
+.panel-wrap .RadPanelBar_Template .rpExpanded:hover,
+.panel-wrap .RadPanelBar_Template .rpSelected,
+.panel-wrap .RadPanelBar_Template .rpSelected:hover
+{
+color:#c38b4e; /*added style to give link hover effect -> delete this style if no text effect on hover*/
+background-color:transparent;
+text-decoration:none;
+border:none; /*overwrites template.css*/
+}
+
+/*--
+Arrow
+------*/
+.panel-wrap .RadPanelBar .rpExpandable .rpExpandHandle, 
+.panel-wrap .RadPanelBar .rpExpanded .rpExpandHandle { 
+background-image:url(../../../../Images/Redesign/ccc-sprite.png);
+background-repeat:no-repeat;
+position: absolute;
+right: 0;
+}
+
+
+/*This block overwrites template.css*/
+.panel-wrap .RadPanelBar_Template .rpExpandable .rpText,
+.panel-wrap .RadPanelBar_Template .rpExpanded .rpText
+{
+	background-color: transparent;
+	background-image: none; /*set up with your arrow here*/
+	text-decoration:none;
+	padding:0;
+}
+
+/* <subitems> */
+
+/*SubItem UL Class*/
+.panel-wrap .RadPanelBar_Template .rpGroup {
+background-color: transparent; /*overwrites template.css*/
+padding:10px 0;	
+width:auto !important;
+}
+
+.panel-wrap .RadPanelBar_Template .rpGroup .rpText {
+padding:0 0 0 50px;	
+}
+
+
+/*SubItem A Class*/
+.panel-wrap .RadPanelBar_Template .rpGroup .rpLink {
+	font: normal 12px/22px Proxima-Nova,sans-serif;
+	background-image: none;
+	background-color: transparent;
+	color:#867e6a;
+	letter-spacing:0;
+	}
+
+/*SubItem A:hover*/
+.panel-wrap .RadPanelBar_Template .rpGroup .rpLink:hover {
+	backgrond:none;
+	text-decoration:none;
+	color:#af8215;
+}
+
+/*Overwrites template.css .rpOut Styles*/
+.panel-wrap .RadPanelBar_Template .rpGroup .rpLink .rpOut {		
+	background-color: transparent;
+	background-image: none; /*overwrite template.css*/
+	background-repeat: no-repeat;
+}
+
+/*SubItem A:selected*/
+.panel-wrap .RadPanelBar_Template .rpGroup .rpSelected,
+.panel-wrap .RadPanelBar_Template .rpGroup .rpSelected:hover {
+	backgrond:none;
+	text-decoration:none;
+	color:#af8215;
+}
+
+.panel-wrap .RadPanelBar .rpGroup .rpOut {padding:0; margin:0}
+
+
+/*Arrow Position*/
+/*Default Arrow State*/
+.panel-wrap .RadPanelBar_Template .rpExpandable .rpExpandHandle { background-position:0 9px; } 
+/*Arrow on click*/
+.panel-wrap .RadPanelBar_Template .rpExpanded .rpExpandHandle  {background-position:0 -57px; } 
+
+
+/*      <subitems (expand arrows)> */
+.panel-wrap .RadPanelBar_Template .rpGroup .rpExpandable .rpExpandHandle { }
+
+.panel-wrap .RadPanelBar_Template .rpGroup .rpExpanded .rpExpandHandle { }
+

@@ -1,0 +1,201 @@
+/* NEW Menu Slide Out default CSS
+Author: Jason Nolfi
+Version: 5
+
+Updates [7/30/13]:
+* Minified verson of nav CSS [removes comments]
+
+/*----
+RESET STYLES
+----*/
+.hnav .RadMenu_Template,
+.hnav .RadMenu_Template .rmItem,
+.hnav .RadMenu_Template .rmLink,
+.hnav .RadMenu_Template .rmText,
+.hnav .RadMenu_Template .rmHorizontal .rmText,
+.hnav .RadMenu_Template .rmRootGroup,
+.hnav .RadMenu_Template .rmGroup,
+.hnav .RadMenu_Template .rmHorizontal .rmRootLink span.rmText {
+	margin: 0;
+	padding: 0;
+	/*RESETS TEMPLATE.css STYLES*/
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background-image:none;
+	background:none;
+	border:0;
+	
+	}
+
+	
+.hnav .RadMenu_Template .rmRootGroup .rmLink,
+.hnav .RadMenu_Template .rmRootGroup .rmText,
+/*1/30/13: JN - overwrites template.css style*/
+.hnav .RadMenu_Template .rmHorizontal .rmItem > a.rmRootLink
+ {width:auto;}
+ 
+ .hnav .RadMenu_Template{
+	width:100% !important; 
+ }
+ 
+ .hnav .RadMenu_Template .rmRootGroup,
+ .hnav .RadMenu_Template .rmHorizontal {
+	margin:0 auto; 
+ }
+
+
+/*---
+DIV > UL 
+---*/
+.hnav .RadMenu_Template .rmRootGroup {
+     text-align: center;
+}
+
+/*----
+DIV > UL > LI
+-----*/
+.hnav .RadMenu_Template .rmRootGroup .rmItem {}
+
+
+/*---
+Root Span
+---*/
+
+.hnav .RadMenu_Template .rmRootGroup .rmItem .rmLink .rmText,
+.hnav .RadMenu_Template .rmRootGroup .rmItem .rmLink:hover .rmText,
+.hnav .RadMenu_Template .rmRootGroup .rmItem .expanded .rmText {
+ /*background:none; */
+
+}
+
+
+/*----
+Root Link
+-----*/
+.hnav .RadMenu_Template .rmRootGroup .rmLink {
+    color: #fff;
+    text-decoration: none;
+	font: 13px/40px Arial, "Helvetica Neue", Helvetica, sans-serif;
+	cursor: pointer;
+	text-align:center;
+	padding:0 20px;
+	background:none;
+	
+}
+
+
+/*----
+Hover
+-----*/
+.hnav .RadMenu_Template .rmRootGroup .rmLink:hover,
+.hnav .RadMenu_Template .rmRootGroup .rmFocused
+
+ {
+color:#30ace6;
+background:none;
+}
+
+.hnav .RadMenu_Template .rmRootGroup .rmSelected,
+.hnav .RadMenu_Template .rmRootGroup .rmSelected:hover,  
+.hnav .RadMenu_Template .rmRootGroup .rmDisabled, 
+.hnav .RadMenu_Template .rmRootGroup .rmDisabled:hover,
+.hnav .RadMenu_Template .rmRootGroup .rmExpanded, 
+.hnav .RadMenu_Template .rmRootGroup .rmExpanded:hover,
+.hnav .RadMenu_Template .rmRootGroup .rmSelectedParent,
+.hnav .RadMenu_Template .rmRootGroup .rmSelectedParent:hover {
+color:#fff;
+background:#84bf8f;
+}
+
+/*----
+Submenu
+------*/
+
+.hnav .RadMenu_Template .rmVertical .rmSlide,
+.hnav .RadMenu_Template .rmSlide {
+	margin:0;
+
+	
+}
+
+.hnav .RadMenu_Template .rmGroup,
+.hnav .RadMenu_Template .rmMultiColumn, .hnav .RadMenu_Template .rmGroup .rmVertical {
+	background:rgb (51,51,51);
+	background:rgba(51,51,51,.7);
+	padding:0 !important;  /*Overrides padding from telerik stylesheet*/
+	border:0;
+	}
+
+.hnav .RadMenu_Template .rmGroup .rmItem {
+margin:0;	
+}
+	
+/*---------
+Submenu Span
+----------*/
+.hnav .RadMenu_Template .rmGroup .rmLink,
+.hnav .RadMenu_Template .rmGroup .rmText {width:auto;}
+
+	
+.hnav .RadMenu_Template .rmGroup .rmItem .rmLink .rmText,
+.hnav .RadMenu_Template .rmGroup .rmItem .rmLink:hover .rmText {
+padding:0 50px 0 20px; 
+}
+	
+
+/*-----
+Submenu Link + :hover
+------*/
+.hnav .RadMenu_Template .rmGroup .rmLink {
+    background:none;
+	color:#fff;
+    text-decoration: none;
+	font-size: 12px;
+    font-weight: normal;
+    line-height: 24px;
+	cursor: pointer;
+	text-align:left;
+	text-transform:none;
+	padding:0;
+	}
+
+.hnav .RadMenu_Template .rmGroup .rmLink:hover,
+.hnav .RadMenu_Template .rmItem .rmGroup a.rmLink:hover,
+.hnav .RadMenu_Template .rmItem .rmGroup a.rmFocused, 
+.hnav .RadMenu_Template .rmItem .rmGroup a.rmSelected, 
+.hnav .RadMenu_Template .rmItem .rmGroup a.rmExpanded, 
+.hnav .RadMenu_Template .rmItem .rmGroup a.rmExpanded:hover, 
+.hnav .RadMenu_Template .rmItem .rmGroup a.rmDisabled, 
+.hnav .RadMenu_Template .rmItem .rmGroup a.rmDisabled:hover {
+	background:#333;
+	color:#fff;
+
+}
+
+/*.hnav .RadMenu_Template .rmGroup .rmLevel2 .rmLink {
+color:#f7f6ed;
+}
+
+.hnav .RadMenu_Template .rmGroup .rmLevel2 .rmLink:hover,
+.hnav .RadMenu_Template .rmItem .rmGroup .rmLevel2 a.rmLink:hover,
+.hnav .RadMenu_Template .rmItem .rmGroup .rmLevel2 a.rmFocused, 
+.hnav .RadMenu_Template .rmItem .rmGroup .rmLevel2 a.rmSelected, 
+.hnav .RadMenu_Template .rmItem .rmGroup .rmLevel2 a.rmExpanded, 
+.hnav .RadMenu_Template .rmItem .rmGroup .rmLevel2 a.rmExpanded:hover, 
+.hnav .RadMenu_Template .rmItem .rmGroup .rmLevel2 a.rmDisabled, 
+.hnav .RadMenu_Template .rmItem .rmGroup .rmLevel2 a.rmDisabled:hover{
+background:#c0a274;}
+*/
+
+/*-----
+Arrows Root
+-----*/
+
+/*.hnav .RadMenu_Template .rmGroup .rmText.rmExpandRight, 
+.hnav .RadMenu_Template .rmGroup .rmText.rmExpandLeft,
+.hnav .RadMenu_Template .rmGroup a.rmLink:hover .rmExpandRight, 
+.hnav .RadMenu_Template .rmGroup a.rmLink:hover .rmExpandLeft, 
+.hnav .RadMenu_Template .rmGroup .rmExpanded .rmExpandRight, 
+.hnav .RadMenu_Template .rmGroup .rmExpanded .rmExpandLeft
+  {background:url(../../../../Images/nav-arrow.png) no-repeat 90% center;}*/
+

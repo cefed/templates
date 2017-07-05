@@ -1,0 +1,10 @@
+.login-wrapper{
+	height: 100%;
+	position: relative;
+	> div, > div > div{ height: 100%; }
+	> div > div > .clickToEditDiv{ display: none; }
+}
+
+
+/********** TYPE 1 **********/
+@import "loginType1.scss";

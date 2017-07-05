@@ -1,0 +1,118 @@
+.panel-1{
+	> table{
+		width:100%;
+		table-layout:fixed;
+		> * > * > *{ padding:0; }
+	}
+	@media(max-width:1024px){
+		padding:2rem;
+	}
+	@media(max-width:991px){
+		> table, > table > *{ display:block; }
+		> table > * > *{ display:table;width:100%; }
+	}
+	@media(max-width:768px){
+		text-align:center;
+	}
+	
+	&.left{
+		> table{
+			> * > * > *:last-child{
+				width: 54%;
+				position: relative;
+				.mpContent{
+					@media(min-width: 1025px){
+						position: absolute;
+						top: 0; left: 0; right: 0; bottom: 0;
+						background-size: cover; background-position: 50% 50%;
+					}
+					@media(max-width: 1024px){
+						img{ display: block !important; width: 100%; }
+					}
+				}
+				@media(max-width: 1199px){
+					width: 50%;
+				}
+				@media(max-width: 1024px){
+					display: table-header-group;
+					width: 100%;
+				}
+			}
+			> * > * > *:first-child{
+				width: 46%;
+				padding: 5rem 8rem;
+				vertical-align: middle;
+				.mpContent{
+					@media(min-width: 992px){
+						width: 100%;
+						max-width: 600px;
+						margin-left: auto;
+					}
+				}
+				@media (max-width:1400px){
+					padding: 5rem 6rem;
+				}
+				@media (max-width:1199px){
+					padding: 4rem;
+					width: 50%;
+				}
+				@media(max-width: 1024px){
+					display: table-footer-group;
+					width: 100%;
+					.mpContent{ padding: 2rem 0 0; }
+				}
+			}
+		}
+	}
+	
+	&.right{
+		> table{
+			> * > * > *:first-child{
+				width: 54%;
+				position: relative;
+				@media(max-width: 1199px){
+					width: 50%;
+				}
+				@media(max-width: 1024px){
+					display: table-header-group;
+					width: 100%;
+				}
+				.mpContent{
+					@media(min-width: 1025px){
+						position: absolute;
+						top: 0; left: 0; right: 0; bottom: 0;
+						background-size: cover; background-position: 50% 50%;
+					}
+					@media(max-width: 1024px){
+						img{ display: block !important; width: 100%; }
+					}
+				}
+			}
+			> * > * > *:last-child{
+				width: 46%;
+				padding:5rem 8rem;
+				vertical-align: middle;
+				background: rgb(242, 242, 242);
+				.mpContent{
+					@media(min-width: 992px){
+						width: 100%;
+						max-width: 600px;
+						margin-right: auto;
+					}
+				}
+				@media (max-width:1400px){
+					padding: 5rem 6rem;
+				}
+				@media (max-width:1199px){
+					padding: 4rem;
+					width: 50%;
+				}
+				@media(max-width: 1024px){
+					display: table-footer-group;
+					width: 100%;
+					.mpContent{ padding: 2rem 0 0; }
+				}
+			}
+		}
+	}
+}

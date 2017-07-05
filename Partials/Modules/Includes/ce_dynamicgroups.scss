@@ -1,0 +1,16 @@
+// Dynamic Groups
+
+.NETCEDynamicGroups #content{
+	// Hide Spacers
+	[width="1"], [height="1"] { display: none; }
+	> table[align="center"]{
+		margin: 0 0 40px;
+	}
+	
+	// Add Border, BG, Padding, Base Fontsize to Content TD
+   .tnavTabON[width="99%"]{ 
+		@include moduleWrapperStyles();
+		font-size: 1rem;
+		line-height: 1.6;
+	} 
+}

@@ -1,0 +1,50 @@
+.RadGrid_Axis .rgAdd, .RadGrid_Axis .rgRefresh, 
+.RadGrid_Axis .rgEdit, .RadGrid_Axis .rgDel, 
+.RadGrid_Axis .rgFilter, .RadGrid_Axis .rgPagePrev, 
+.RadGrid_Axis .rgPageNext, .RadGrid_Axis .rgPageFirst, 
+.RadGrid_Axis .rgPageLast, .RadGrid_Axis .rgExpand, 
+.RadGrid_Axis .rgCollapse, .RadGrid_Axis .rgSortAsc, 
+.RadGrid_Axis .rgSortDesc, .RadGrid_Axis .rgUpdate, 
+.RadGrid_Axis .rgCancel, .RadGrid_Axis .rgUngroup, 
+.RadGrid_Axis .rgExpXLS, .RadGrid_Axis .rgExpDOC, 
+.RadGrid_Axis .rgExpPDF, .RadGrid_Axis .rgExpCSVP{
+	background-image: url('../../../A_Master/NET/Telerik/Skins/Axis/Grid/sprite.gif') !important;
+	border: none !important;
+	background-color: transparent !important;
+	background-repeat: no-repeat !important;
+}
+.RadGrid_Axis .rgExpand {
+	background-position: 5px -496px !important;
+}
+.RadGrid_Axis .rgHeader .rgSortDesc {
+	background-position: 3px -198px !important;
+	height: 10px;
+}
+.RadGrid_Axis .rgCollapse{
+	background-position: 3px -444px !important;
+}
+.RadGrid_Axis .rgPageFirst {
+	background-position: 0 -550px !important;
+}
+.RadGrid_Axis .rgPagePrev {
+	background-position: 0 -700px !important;
+}
+.RadGrid_Axis .rgPageNext {
+	background-position: 0 -850px !important;
+}
+.RadGrid_Axis .rgPageLast {
+	background-position: 0 -1000px !important;
+}
+.RadTabStrip .rtsUL, .RadTabStripVertical .rtsUL{
+	min-width: 400px;
+}
+.modStatsVisitorBar, .modStatsUserBar{
+	text-align: left;
+}
+.RadGrid .rgHeader{
+	background: $link-color;
+	color: #FFF;
+	input{
+		display: none;
+	}
+}	

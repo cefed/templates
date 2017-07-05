@@ -1,0 +1,112 @@
+/*-------------------------------------------
+	SURROUNDING UL
+--------------------------------------------*/
+.content-area .RadPanelBar_accordionTemplate .rpRootGroup {
+
+	BORDER:none;
+	padding-top:30px; /*Used to create space between top of accordion and content above*/
+
+}
+
+.content-area .RadPanelBar_accordionTemplate .rpRootGroup .rpItem {}
+
+
+/*-----------------------------------------------
+	CHANGES DEFAULT IDLE TEXT - TEXT ONLY
+------------------------------------------------*/
+.content-area .RadPanelBar_accordionTemplate .rpLink .rpOut,
+.content-area .RadPanelBar_accordionTemplate .rpFocused .rpOut, 
+.content-area .RadPanelBar_accordionTemplate .rpLink:hover .rpOut, 
+.content-area .RadPanelBar_accordionTemplate .rpSelected .rpOut, 
+.content-area .RadPanelBar_accordionTemplate .rpSelected:hover .rpOut,
+.content-area .RadPanelBar_accordionTemplate .rpLink.rpExpandable.rpSelected .rpOut,
+.content-area .RadPanelBar_accordionTemplate .rpExpandable .rpText,
+.content-area .RadPanelBar_accordionTemplate .rpExpandable .rpText:hover, 
+.content-area .RadPanelBar_accordionTemplate .rpExpanded .rpText:hover
+
+{
+
+	color:#591118;
+	font:16px NRaleway, "Lucida Sans", Verdana, sans-serif;
+	margin:0;
+	background: none;
+
+}
+
+/*-------------------------------------------
+	BACKGROUND FOR IDLE STATE
+--------------------------------------------*/
+
+
+
+
+.content-area .RadPanelBar_accordionTemplate .rpExpandable .rpText,
+.content-area .RadPanelBar_accordionTemplate_rtl .rpExpandable .rpText,
+.content-area .RadPanelBar_accordionTemplate .rpGroup .rpExpandable .rpText,
+.content-area .RadPanelBar_accordionTemplate_rtl .rpGroup .rpExpandable .rpText,
+.content-area .RadPanelBar_accordionTemplate .rpExpandable .rpText:hover, 
+.content-area .RadPanelBar_accordionTemplate .rpExpanded .rpText:hover
+{ 
+	
+	padding:0;
+	border-top:2px solid #fff;
+	padding-left:50px;
+	line-height:36px;
+	background: url(../../../../Images/accord-arrow.png) no-repeat 15px 15px;
+}
+
+
+
+
+
+/*------------------------------------------
+	CHANGES SELECTED TEXT - TEXT ONLY
+------------------------------------------*/
+.content-area .RadPanelBar_accordionTemplate .rpSelected .rpOut, 
+.content-area .RadPanelBar_accordionTemplate .rpSelected:hover .rpOut,
+.content-area .RadPanelBar_accordionTemplate .rpLink.rpExpandable.rpSelected.rpExpanded .rpOut,
+.content-area .RadPanelBar_accordionTemplate .rpExpanded .rpText,
+.content-area .RadPanelBar_accordionTemplate .rpLink:hover .rpOut,
+.content-area .RadPanelBar_accordionTemplate .rpExpandable .rpText:hover, 
+.content-area .RadPanelBar_accordionTemplate .rpExpanded .rpText:hover {
+	
+	color:#c38b4e;
+    
+}
+
+/*-------------------------------------------
+	BACKGROUND FOR SELECTED STATE
+--------------------------------------------*/
+.content-area .RadPanelBar_accordionTemplate .rpGroup .rpExpanded .rpText,
+.content-area .RadPanelBar_accordionTemplate_rtl .rpExpanded .rpText,
+.content-area .RadPanelBar_accordionTemplate .rpExpanded .rpText,
+.content-area .RadPanelBar_accordionTemplate_rtl .rpGroup .rpExpanded .rpText, 
+.content-area .RadPanelBar_accordionTemplate .rpExpanded .rpText:hover {
+	
+	padding:0 0 0 50px ;
+	line-height:36px;
+	background: #fff url(../../../../Images/accord-arrow.png) no-repeat 15px -22px;
+	
+}
+
+
+/*--------------------------------
+	INTERIOR CONTENT
+---------------------------------*/
+.content-area .RadPanelBar_accordionTemplate .rpGroup .rpItem {
+	margin:0;
+}
+
+.content-area .RadPanelBar_accordionTemplate .rpGroup .rpLink, 
+.content-area .RadPanelBar_accordionTemplate .rpGroup .rpTemplate {
+  
+ 	background: #fff;
+	text-transform:none;
+	padding: 15px 40px 30px;
+	font-size:14px;
+
+}
+
+.content-area .RadPanelBar_accordionTemplate .rpGroup .rpTemplate .mpContent ul {
+list-style-type: disc;	
+}

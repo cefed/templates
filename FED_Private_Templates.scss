@@ -1,0 +1,358 @@
+	// VARIABLES
+	$font1: serif;
+	$font2: sans-serif;
+	$color1: #000;
+	$color1-light:#EEE;
+	$color1-dark: #000;
+	$color2: #777;
+	$color2-light: #777;
+	$color2-dark: #777;
+	$bg-gray: #F1F1F1;
+	$bg-gray-dark: #EDEDED;
+	$bg-image: url(FED_Private_Templates_css/images/golf.jpg);
+	$font-size: 16px;
+
+
+	// Set Site to 100%	
+	html, body{ height: 100%; }
+	body>form,form>[id^=masterPageUC_MSTR]{
+		height: 100%;
+	}
+	#adminDashboard~[id^=masterPageUC_MSTR], 
+	form>#adminDashboard[style*="display: block;"]~[id^=masterPageUC_MSTR]{ 
+		height: calc(100% - 46px);
+	}
+	form>#adminDashboard[style*="display: none;"]~[id^=masterPageUC_MSTR]{ 
+		height:100%;
+	}
+	
+	// BASE STYLES
+	body, p, ol, ul, .mpContent, .mpContent table{
+		font-family: $font1;
+		color: $color1;
+		font-size: $font-size;
+		line-height: 1.87;
+	}
+	.private-mp{ position: relative }
+
+	h1,h2,h3,h4,h5,h6{ margin-top: 0; }
+	h1{
+		font-family: $font1;
+		color: $color1;
+		font-size: 40px;
+	}
+
+	h2{
+		font-family: $font1;
+		color: $color1;
+		font-size: 24px;
+	}
+
+	h3{
+		font-family: $font1;
+		color: $color1;
+		font-size: 20px;
+	}
+
+	h4{
+		font-family: $font2;
+		color: $color1;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+
+	h5{
+		font-family: $font2;
+		color: $color1;
+		font-size: 14px;
+	}
+
+	h6{
+		font-family: $font2;
+		color: $color1;
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+
+	a,a.small,a.anchor,a.visited{
+		color: $color1;
+		-webkit-transition: .3s;
+		-o-transition: .3s;
+		transition: .3s;
+	}
+	a:hover, a:active{
+		color: $color1;
+	}
+	
+	// Abut
+	 .mpContent   .abut {
+		display: inline-block;
+		padding: 12px 30px;
+		border: 2px solid #222;
+		font-family: sans-serif;
+		font-size: 12px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: #222;
+		transition: 0.3s;
+		text-decoration: none !important;
+		&:hover, &:active{
+			border: 2px solid #222;
+			background: #222;
+			color: #FFF;
+		}
+    }
+
+	.module-wrap{
+		margin: 0 auto;
+		padding: 55px 0;
+	}
+	.gray-bg{
+		// Hero, Quicklinks 4, News-1, etc all use this, the generic class you made will work to save size and can be used by content/client at the same time.
+		background: $bg-gray;
+	}
+
+	//Client Editable Background (MiniPage Background)	Requires JS as IE doesnt allow objectfit.
+	.mp-bg{ 
+		position: relative;
+		background: $color1;
+		> *{ position: relative; }
+		> .mpContent{
+			position: absolute;
+			z-index: 0;
+			top: 0; bottom: 0; left: 0; right: 0;
+			background-size: cover;
+			background-position: 50% 50%;
+			opacity: 0.8;
+			overflow: hidden;
+		}
+		.mpContent img{
+			width: 100%;
+		}
+		.clickToEditDiv {
+			position: absolute;
+			bottom: 0; left: 0; right: 0;
+			z-index: 10
+		}
+		&.grayscale{
+			.mpContent{
+				filter: gray;
+				-webkit-filter: grayscale(1);
+				filter: grayscale(1);
+			}
+		}
+	}
+	
+	// Private Home Section Titles
+	.prv-inline-title{
+		overflow: auto;
+		h1{
+			float: left;
+			margin-bottom: 35px;
+		}
+		.view-button{
+			float: right;
+		}
+		@media (max-width: 991px){
+			text-align: center;
+			h1{
+				float: none;
+				margin-bottom: 15px;
+				font-size: 30px;
+			}
+			.view-button{ margin: 0 0 20px; float: none; }
+		}
+	}
+	.prv-centered-title{
+		text-align: center;
+		.view-button{
+			margin-bottom: 30px;
+		}
+		@media (max-width: 991px){
+			h1{
+				font-size: 30px;
+			}
+		}
+	}
+	
+	.prv-max-width {
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+	}
+
+	.content-pad{
+		padding: 50px 15px;
+	}
+        
+	//Archive/Calendar Button
+	.view-button{
+		display: inline-block;
+		font-family: sans-serif;
+		font-size: 12px;
+		font-weight: 400;
+		text-decoration: none;
+		-webkit-transition: .3s;
+		-o-transition: .3s;
+		transition: .3s;
+		// Default BG For Colored Buttons (Gray)
+		&.has-bg{
+			color: $color2;
+			background-color: $bg-gray;
+			&:hover, &:active{
+				background-color: $bg-gray-dark;
+			}
+		}
+		// Default Calendar Icon
+		&[class*="-icon"]{
+			padding: 10px 40px 10px 65px;
+			background-repeat: no-repeat;
+			background-position: 25px 50%;
+			&:hover, &:active{
+				background-position: 20px 50%;
+				text-decoration: none;
+			}
+		}
+		// Plain Text Hyperlink (IE Version 2 of the Homepage)
+		&.pure-text{
+			margin-bottom: 20px;
+			display: inline-block;
+			font-size: 11px;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 2px;
+			float: none;
+			padding: 0;
+			border-bottom: 1px solid transparent;
+			&:hover, &:active{
+				border-bottom: 1px solid;
+			}
+		}
+	}
+	
+	// Hero Slider Counter
+	ul.counter{
+		display: inline-block;
+		margin: 0; padding: 0;
+		li{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			padding: 0; margin: 0 4px;
+			border: 2px solid #fff;
+			border-radius: 50%;
+			position: relative;
+			background: none;
+			cursor: pointer;
+			text-decoration: none;
+			&.active{
+				background: #FFF;
+			}
+		}
+
+	}
+
+	/********** FEATURED HEROES **********/ 
+	@import "Partials/Heroes/baseHeroes.scss";
+	
+	/********** QUICKLINKS SECTION **********/ 
+	@import "Partials/Quicklinks/baseQuicklinks.scss";
+	
+	/********** CALENDAR EVENTS SECTION **********/    
+	@import "Partials/Events/baseEvents.scss";
+
+    /********** NEWS ARTICLES SECTION **********/       
+    @import "Partials/News/baseNews.scss";  
+
+	/********** BANNERS SECTION **********/ 
+	@import "Partials/Banners/baseBanners.scss";
+	
+	/********** SUBNAV SECTION **********/ 
+	@import "Partials/SubNav/baseSubNav.scss";
+	
+	/********** CONTENT SECTION **********/ 
+	@import "Partials/Content/baseContent.scss";
+	
+	/********** PANELS SECTION **********/ 
+	@import "Partials/Panels/basePanels.scss";
+	
+	/********** FORM BASE SECTION **********/ 
+	@import "Partials/FormBase/baseFormBase.scss";
+	
+	/********** FORM BASE SECTION **********/ 
+	@import "Partials/Login/baseLogin.scss";
+	
+	/********** FORM BASE SECTION **********/ 
+	@import "Partials/Modules/modules.scss";
+	
+	/* Mobile Edits */
+	section[class*="events"] .floatRight,
+	section[class*="news"] .floatRight {
+		display: none;
+	}
+	
+	.floatLeft {
+		float: none;
+		width: 100%;
+	}
+	
+	.headerBar,
+	.pluginTitleBar,
+	.sploderTitleBar {
+		background: none;
+		border: none;
+		color: $color1;
+	}
+	
+	.module .mobileButton {
+		background: $color1;
+		border-color: $color1;
+	}
+	
+	div.corpLogWrapper {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		z-index: 5000000;
+		margin: -60px auto;
+		padding-top: 120px;
+	}
+	
+	div.corpLogContainer {
+		width: 100%;
+		max-width: 500px;
+	}
+	
+	#banner_homeTable img {
+		display: none;
+	}
+	
+	input[type=radio],
+	input[type=checkbox] {
+		margin: 4px 4px 0 0;
+	}
+	
+	[id^="photoPlugin"] {
+		-ms-touch-action: pan-y;
+		touch-action: pan-y;
+	}
+	
+	.image-bg-cover{
+		background-size: cover;
+		background-position: 50%;
+		-o-object-position: -999999px -999999px;
+		object-position: -999999px -999999px;
+	}
+	
+	.private-mp .public-show,
+	.public-mp .private-show {
+		display: none
+	}
+	
+	.searchButton {
+		width: 42px;
+		right: 15px;
+	}

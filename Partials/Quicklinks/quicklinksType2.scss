@@ -1,0 +1,25 @@
+.quicklinks-2{
+	text-align: center;
+	padding: 40px 10px;
+	h2{ margin-bottom: 20px; }
+	ul li a{
+		display: block;
+		padding: 0 20px;
+		font-family: sans-serif;
+		font-weight: 300;
+		font-size: 11px;
+		letter-spacing: 2px;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $color1;
+		&:hover, &:active{
+			color: $color2;
+		}
+	}
+	@media (max-width: 768px) {
+		ul li{
+			display: block;
+			margin: 0 0 5px;
+		}
+	}
+}

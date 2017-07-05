@@ -1,0 +1,27 @@
+// Email Groups
+
+.NETEmailUIMain, .NETEmailUIEditSched{
+	[id$="tblMessages"],[id$="tblScheduledMessages"]{
+		> * > tr:first-child{
+			background: @LinkColor;
+			color: @White;
+			> td{
+				padding: 15px;
+				vertical-align: middle;
+				a{
+					color: @White !important;
+					line-height: 1.5;
+					display: inline-block;
+					text-align: center;
+					img{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	#content > table:first-child + table{
+		margin: 0 0 40px;
+		> * > tr > .tnavTabON{ .moduleWrapperStyles(); }
+	}
+}

@@ -1,0 +1,100 @@
+// Site Configuration - Other
+
+.NETDynEntryFormLanding #content{
+	.RosterLetterOff{
+		background: @LinkColor;
+		color: @White;
+		> td{
+			padding: 10px;
+		}
+	}
+	> script:first-child + table{
+		width: 100%;
+		height: 50px;
+		margin: 1rem 0 6rem;
+		float: left;
+		text-align: left;
+	}
+	
+	// Admin Bar
+	> script:first-child + table + table{
+		display: inline-block;
+		width: 100%;
+		margin: 70px 0 0 0;
+		padding: 0 !important;
+		position: absolute;
+		right: 15px;
+		text-align: right;
+		*{
+			display: inline-block;
+			color: transparent;
+			letter-spacing: -0.3rem;
+		}
+		a{
+			.def_btn();
+			margin: 0;
+		}
+	}
+	
+	[id$="_tblForms"]{
+		.moduleWrapperStyles();
+	}
+}
+
+.NETResultsLanding #content{
+	table:first-child  + table{
+		.moduleWrapperStyles();
+		border: none;
+	}
+	
+	[id$="_tblSubmissions"]{
+		margin: 0 0 40px;
+		.moduleWrapperStyles();
+	}
+}
+
+.NETFullFormReport #content{
+	script:first-child + table + div{
+		> a{
+			.def_btn();
+		}
+	}
+	script:first-child + table + div + div{
+		.moduleWrapperStyles();
+		display: block !important;
+		margin: 40px 0 0;
+		> div{
+			max-width: 100%;
+			overflow: auto;
+			> table > tbody > tr:first-child > td{
+				vertical-align: bottom;
+				min-width: 150px;
+				padding: 5px 5px 10px;
+				background: #333;
+				color: #FFF;
+				img{ 
+					vertical-align: bottom;
+					float: right;
+					width: 17px;
+				}
+			}
+		}
+	}
+}
+
+.NETFormReport #content{
+	table:first-child + div{
+		.moduleWrapperStyles();
+	}
+}
+
+.NETDynamicForm #content{
+	.formBaseFormWrapper{
+		.moduleWrapperStyles();
+	}
+}
+.NETDynamicFormView #content{
+	#Table2 > tbody > tr:nth-child(2) > td > table{
+		.moduleWrapperStyles();
+	}
+}

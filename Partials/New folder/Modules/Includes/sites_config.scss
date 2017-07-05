@@ -1,0 +1,16 @@
+// Site Configuration - Other
+
+.NETsitesConfig{
+	#content > *:first-child{
+		margin: 0 0 50px;
+	}
+	// Hide Spacers
+	[width="1"],[height="1"] { display: none; }
+	[id$="_pnlArticleView"]{ 
+		margin: 0 0 40px; 
+		> * > * > * > *:first-child, > * > * > * > *:last-child{ display: none; }
+	}
+	// Shift Tabs uppercase
+	.moduleTabsWrapper{ margin: 0 0 -1px; }
+	.tnavTabON[width="99%"]{ .moduleWrapperStyles(); }
+}

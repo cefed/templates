@@ -1,0 +1,17 @@
+// Site Configuration - Global
+
+.v35SiteConfig{
+	#content > *:first-child{
+		margin: 0 0 50px;
+	}
+	// Hide Spacers
+	[width="1"], [height="1"] { display: none; }
+	#Table1{
+		.moduleTabsWrapper{ margin: 0 0 -1px; }
+		// Set Nav TD to 100% Width
+		> tbody > tr:first-child > td:first-child + td{ width: 100%; }
+	}
+	.tnavTabON[width="99%"]{
+		@include moduleWrapperStyles();
+	}
+}

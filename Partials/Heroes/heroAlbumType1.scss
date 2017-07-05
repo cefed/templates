@@ -1,0 +1,76 @@
+/* HERO ALBUM TYPE 1 */
+.featured-hero-1{
+	background: #333;
+	ul.counter{	margin: 0 0 20px; }
+	> table{ // Settings Table
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 25px;
+		z-index: 10;	
+	}
+	.hero-wrap{ // Used to ensure IE9 Compatability
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		> div{ display: table-row; }
+	}
+	.hero-img{
+		display: table-cell; width: 50%;
+		background-size: cover;
+		background-position: 50% 50%;
+		img{
+			//IMG is necessary for some spacing conflicts but can be hidden. By setting a max-height, you can control the maximum height the album will scale outside of the content, useful for really large screen sizes (1900+)
+			width: 100%; max-height:600px; opacity: 0; 
+		}
+	}
+	.hero-desc{
+		display: table-cell; width: 50%;
+		vertical-align: middle;
+		font-size: 0; // Removes Inline-block spacing
+		text-align: right; // Pushes content inside
+		> div{
+			display: inline-block;
+			width: 100%;
+			max-width: 600px;
+			padding: 0 25px;
+			font-size: $font-size; // Fixes font-size
+			text-align: left; // Fixes font-alignment
+		}
+	}
+	h1{
+		color: #fff;
+		margin-bottom: 20px;
+	}
+	p{
+		color: #fff;
+		max-width: 475px;
+	}
+	.hero-btn {
+		color: #fff;
+		border: 2px solid #fff;
+		&:hover, &:active{
+			background: rgba(0,0,0,0.7);
+		}
+	}
+	@media(max-width: 991px){
+		ul.counter{	margin: 0 0 10px; }
+		.hero-wrap{
+			display: block;
+			width: 100%;
+			> div{ display: table; width: 100%; }
+		}
+		.hero-img{
+			display: table-header-group; width: 100%;
+		}
+		.hero-desc{
+			display: table-footer-group; width: 100%;
+			text-align: center;
+			> div{ padding: 25px 10px 45px; text-align: center; }
+		}
+		p {
+			max-width: none;
+		}
+
+	}
+}

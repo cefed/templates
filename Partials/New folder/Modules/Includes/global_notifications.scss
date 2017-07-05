@@ -1,0 +1,16 @@
+// Site Notifications
+
+.GlobalNotifications #content{
+	hr{ display: none; }
+	// Adjust Header
+	.plgHeaderBar{
+		padding: 0 0 10px;
+	}
+	table{
+		margin: 80px 0 40px;
+		// Add BG, Border
+		.moduleWrapperStyles();
+		
+		td{ padding: 15px; }
+	}
+}

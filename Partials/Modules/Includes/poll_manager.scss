@@ -1,0 +1,8 @@
+// Polling Manager
+
+.PollManager [id$="_tblMainView"]{
+	margin: 40px 0;
+	@include moduleWrapperStyles();
+	> * > * > *{ padding: 0 30px 30px; }
+	> * > *:first-child > *{ padding: 30px 30px 30px; }
+}

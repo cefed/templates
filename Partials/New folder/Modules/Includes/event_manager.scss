@@ -1,0 +1,75 @@
+// Event Manager
+.EventReportListing{
+	#content > script:first-child + table{
+		+ div{
+			+ div{
+				.moduleWrapperStyles();
+				border-collapse: initial;
+				margin: 0 0 40px;
+				display: block !important;
+				[id$="tblLocalReports"], [id$="tblGlobalReports"]{
+					> tbody > tr:first-child{
+						background: @LinkColor;
+						color: #FFF;
+					}
+				}
+			}
+		}
+	}
+}
+.EventManager{
+	#divHelp, #divActions{
+	    padding: 10px 10px 7px !important;
+		width: auto !important;
+		ul, li{
+			padding: 0;
+			margin: 0;
+		}
+		li{
+			margin: 0 0 3px;
+		}
+	}
+	[id$="_tblEvents"]{
+		> * > *:first-child{
+			background: @LinkColor;
+			color: @White;
+		}
+		> * > * > *{
+			vertical-align: middle !important;
+			padding: 0 10px;
+		}
+	}
+	// Select Event Table
+	.floatedTableHeader{
+		border-bottom: 1px solid #000;
+		display: block;
+		background: rgb(238, 238, 238);
+		padding: 0 15px 0 0;
+	}
+	table[onkeydown]{
+		.moduleWrapperStyles();
+		border-collapse: initial;
+		margin: 0 0 40px;
+		td{
+			font-size: 14px !important;
+		}
+		+ div{
+			margin: 0 0 20px;
+			a{
+				.def_btn();
+			}
+			+ div{
+				color: transparent;
+				margin: 0 -110px 0 0;
+				a{
+					.def_btn();
+					float: left;
+					text-indent: initial;
+				}
+			}
+		}
+	}
+	[id$="_rapEvents"]{
+		.moduleWrapperStyles();
+	}
+}

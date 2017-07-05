@@ -1,0 +1,55 @@
+// Article View
+[class*="ArticleView"]{
+	// Hide Spacers
+	[width="1"], [height="1"] { display: none; }
+	
+	#articleModHeader{
+		height: 0;
+	}
+	// Admin Bar
+	.adminBar{
+		padding: 0 !important;
+		display: inline-block;
+		margin: 7rem 0 0;
+		input{ margin: 0 0 0 0.1rem !important; }
+		td:first-child{ padding: 0 1.9rem 0 0 !important; }
+	}
+	
+	// Article Print Link
+	.articlePrintLink{
+		margin: 7rem 0 0 0.5rem;
+		float: right;
+		a{
+			@include def_btn();
+			margin: 0;
+		}
+	}
+	
+	// Add Border, BG, Padding to Content TD
+	.tnavTabON[width="100%"]{ 
+		@include moduleWrapperStyles();
+		padding: 3rem 4rem 5rem !important;
+	}
+	
+	//Article Header
+	#articlePageHeader{
+		width: 100%;
+		a, span{
+			text-transform: uppercase;
+		}
+		.articleTitle{
+			display: block;
+			width: 75%;
+			padding: 0 0 2rem;
+			margin: 3rem auto;
+			border-bottom: 1px solid #CCC;
+			font-family: $serif-font;
+			font-size: 2.4rem;
+			line-height: 1;
+			text-align: center;
+		}
+	}
+	
+	//Article Content
+	.articleSummary{ display: none;	}
+}

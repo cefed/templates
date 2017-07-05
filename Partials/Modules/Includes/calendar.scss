@@ -1,0 +1,352 @@
+// v35 Calendar
+body[class*="alendar"]{
+	// Hide Spacers
+	[width="1"], [height="1"] { display: none; }
+
+	// Admin Bar
+	[id$="_admin"]{
+		position: absolute;
+		top: 3.4rem;
+		right: 46.7rem;
+		width: auto !important;
+		[colspan="2"]{ display: none; }
+		td{ display: table-cell; }
+		input{ margin: 0 0 0 0.2rem !important;}
+	}
+	
+	// Calendar Links
+	#calendarLinkBar{
+		top: 3.4rem;
+		right: 0;
+		position: absolute;
+		width: auto !important;
+		color: transparent;
+		a{
+			@include def_btn();
+			float: right;
+			img{ margin: -4px 0 -2px 3px; height: 14px; position: relative; }
+		}
+	}
+	
+	// Calendar Legend
+	.calendarLegend{
+		display: block;
+		position: absolute;
+		bottom: 0; right: 0; left: 0;
+		border-top: 1px solid #CCC;
+		font-size: 1.2rem !important;
+		text-align: center;
+		letter-spacing: 1px;
+		*{ display: inline-block; } 
+		img{ margin: 0 5px 3px 0; }
+		td{ padding: 10px 0; }
+	}
+	
+	// Calendar Title Bar
+	.calendarTitleBar {	
+		font-size: 1.4rem;
+		line-height: 1;
+		display: inline-block;
+		b{ font-weight: 400; }
+	}
+	.rcCalPopup:hover {
+		background-position: -13px -4215.5px !important;
+	}
+	
+	// Allow absolutes to be based off CalendarWrapper
+	[id^="axisCalendar"]{ position: relative; padding: 6.5rem 0; }
+	
+	// Set Border BG Padding Etc
+	[id^="axisCalendar"] > table:last-child{
+		// Add Border, BG, Padding to Content TD
+	   > * > tr:nth-child(5) > .tnavTabON{ 
+			@include moduleWrapperStyles();
+			// Fix Quick Filter Spacing Issues
+			> * > * > tr:first-child > * > * > * > * > * > * > * > tr:first-child{
+				> td:first-child{ 
+					padding: 0 !important; 
+					+ td font{ 
+						float: right;  font-size: 1.2rem; text-transform: uppercase; font-weight: 400; display: block; 
+					} 
+				}
+			}
+		}
+	}
+	// Adjust Quick Filter
+	#btnQuickFilter{ margin: 0 0 10px;}
+	[id^=masterPageUC] .modulewrap .module .calendarQuickFilterWrap .abut{
+		padding: 0 !important;
+		margin: 5px 10px 0 0 !important;
+		border: none !important;
+		background: none;
+		color: #404040 !important;
+		letter-spacing: 0;
+	}
+	.calendarQuickFilterWrap{
+		min-width: 300px;
+		[id^="qf_"]{
+			height: 12px;
+			float: left;
+			margin: 7px 2px 10px 8px !important;
+			+ label{
+				height: 20px;
+				vertical-align: middle;
+				float: left;
+				margin-top: 6px;
+				font-weight: 400;
+				font-family: Tahoma, Geneva, sans-serif;
+				letter-spacing: 1px;
+			} 
+		}
+		div{
+			padding: 1rem;
+		}
+		table{
+			width: 300px;
+			border-color: #CCC !important;
+			table{
+				width: 100%;
+				input{
+					float: left;
+					margin: 0 5px 0 0;
+					+ label{
+						float: left;
+					}
+				}
+			}
+		}
+		td[onclick="javascript:dofilter('ALL')"]{
+			padding: 8px 20px !important;
+			border-bottom: 1px solid #CCC;
+		}
+	}
+	
+	
+	// Headers
+	.modCalDayRow{
+		font-size: 1.4rem;
+		padding: 0 0 30px;
+		// Adjust Time
+		.smallerfont{
+			display: block;
+			padding: 0 20px 0 0;
+			font: 400 1.4rem/1.6 Tahoma,Geneva,sans-serif;
+		}
+		> a:first-child{
+			width: 100%;
+			display: inline-block;
+			float: left;
+			margin: 0 0 10px;
+			font: 400 1.4rem/1.6 Tahoma,Geneva,sans-serif;
+		}
+	}
+	.modCalWeekDayHeader{
+		a{
+			display: block;
+			margin: 30px 0;
+			padding: 12px 20px;
+			color: #666;
+			background: #DDD;
+			font-size: 1.2rem !important;
+			letter-spacing: 0.1rem;
+			text-transform: uppercase;
+		}
+		b{ font-weight: 400; }
+	}
+	.modCalWeekRow{
+		padding: 0 0 10px;
+		font{
+			display: block;
+			padding: 0 20px 0 0;
+			text-align: right;
+		}
+		a{	
+			display: inline-block;
+			margin: 0 0 10px;
+		}
+	}
+	
+	// Calendar - Day
+	[id$="_dayTable"]{
+		margin: 2rem 0;
+		position: relative;
+		// Hide All Items
+		td{ display: none; background: none; }
+
+		// Header Row
+		tr:first-child{
+			border-bottom: 1px dashed #CCC;
+			border-top: 1px dashed #CCC;
+			width: 100%;
+			position: absolute;
+			td:nth-child(2){ display: table-cell; width: auto; padding: 0 34px 0 128px; }
+			td:nth-child(6){ display: table-cell; width: auto; padding: 5px 0; }
+			font{ margin: 0 15px 0 0; font-size: 1.3rem; }
+		}
+		tr:nth-child(2) td{ display: table-cell; padding: 3rem 0; }
+		// Everything Else
+		tr:nth-child(n+2){
+			td:nth-child(2){
+				display: table-cell;
+				width: 175px;
+			}
+			td:nth-child(6){
+				display: table-cell; width: 31px; padding: 5px 15px 0 0;
+			}
+			td:nth-child(7){
+				display: table-cell; 
+			}
+		}	
+	}
+	
+	// Calendar - Week & List
+	[id$="_weekTable"], [id$="_listTable"]{
+		margin: 2rem 0;
+		position: relative;
+		// Hide All Items
+		td{ display: none; background: none; }
+
+		// Header Row
+		tr:first-child{
+			border-bottom: 1px dashed #CCC;
+			border-top: 1px dashed #CCC;
+			width: 100%;
+			position: absolute;
+			td:nth-child(2){ display: table-cell; width: auto; padding: 0 34px 0 128px; }
+			td:nth-child(5){ display: table-cell; width: auto; padding: 5px 0; }
+			font{
+				margin: 0 15px 0 0;
+				font-size: 1.3rem;
+			}
+		}
+		tr:nth-child(2) td{ display: table-cell; padding: 15px 0; }
+
+		// Everything Else
+		tr:nth-child(n+2){
+			td:nth-child(2){
+				display: table-cell;
+				width: 175px;
+			}
+			td:nth-child(4){
+				display: table-cell; width: 31px; padding: 5px 15px 0 0;
+			}
+			td:nth-child(5){
+				display: table-cell; 
+			}
+		}	
+	}
+	
+	// Calendar - Month
+	@mixin modDay(){
+		padding: 6px;
+		// Hide Spacing TDs, set font
+		td{ 
+			display: none; font-size: 1rem; padding: 5px 0 0;
+			a, font{ font-size: 1.2rem; } 
+		}
+		// Show Useful TDs
+		td:nth-child(2), td:nth-child(3){ display: table-cell; }
+			
+		// Change Divider
+		td:nth-child(3){
+			img{ 
+				margin: 0 auto; 
+				display: block;
+				width: 90%;
+				border-bottom: 1px dashed $link-color;
+				height: 1px;
+			}
+		}
+			
+		// Adjust Day Header
+		tr:first-child td{
+			border-bottom: 1px solid #CCC;
+			padding: 0 0 3px 0;
+			display: table-cell;
+			a{ font-size: 1.4rem; }
+		}
+	}
+	.modCalMonth{
+		width: 100% !important;
+		height: auto !important;
+		margin-top: 2rem;
+		th{
+			border-color: #CCC !important;
+			padding: 5px;
+			color: #666;
+			font-weight: 400;
+			text-align: center;
+		}
+		> * > * > *{
+			border: 1px solid #CCC !important;
+			letter-spacing: 1px;
+			font-weight: 400;
+			&:first-child{
+				padding: 0 5px;
+				background: #EEE;
+			}
+			@include modDay();
+		}
+		.currentDay{
+			border: 2px solid $link-color !important;
+		}
+		.calendarEventPastDate{
+			background: #EEE;
+		}
+		.modCalMonthWeekDayOtherMonth{
+			background: #E5E5E5;
+		}
+	}
+			&:first-child{
+				> td{
+					background: none !important;
+					padding: 7px 0 4px;
+					font: 400 1.3rem/1.6 Tahoma, Geneva, sans-serif;
+					text-transform: uppercase;
+				}
+			}
+			&:nth-child(2){
+				> td{
+					padding: 8px 10px 5px;
+				}
+			}
+	// Calendar - Year
+	[id$="_jan"],[id$="_feb"],[id$="_mar"],
+	[id$="_apr"],[id$="_may"],[id$="_jun"],
+	[id$="_jul"],[id$="_aug"],[id$="_sep"],
+	[id$="_oct"], [id$="_nov"],[id$="_dec"]{
+		border: 1px solid #CCC;
+		margin-bottom: 15px;
+		td{
+			padding: 5px 10px;
+		}
+		tr:first-child td{
+			background: none !important;
+			padding: 0 10px 10px;
+			text-transform: uppercase;
+		}
+	}
+	td.modCalYearCurrentDayHighlight{
+		background: #F9F5F5;
+	}
+	
+	// Search
+	.RadPicker_Default{
+		width: 160px;
+		margin: 0 0 0 20px;
+		input{
+			&:first-child{
+				+ table{
+					input{
+						width: 100%;
+						border: 1px solid #ddd;
+						padding: 5px 10px;
+						margin: 10px 0 10px;
+						outline: none;
+						height: 30px;
+					}
+				}
+			}
+		}
+	}
+}

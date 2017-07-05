@@ -1,0 +1,10 @@
+// Site Stats Sessions
+
+.SiteStatsSessions .module link:first-child + link + table + table{
+	margin: 0 0 40px;
+	// Access Content TD
+	> * > * > .tnavTabON{
+		// Add BG, Border, and Padding
+		@include moduleWrapperStyles();
+	}
+}

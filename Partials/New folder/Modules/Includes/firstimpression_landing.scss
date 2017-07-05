@@ -1,0 +1,36 @@
+// Event Manager
+
+.FirstImpressionListing{
+	.RosterLetterOff{
+		background: @LinkColor;
+		color: @White;
+	}
+	#content{
+		div[align="right"]{
+			margin: 20px 0;
+			text-indent: -9999px;
+			overflow: auto;
+			color: transparent;
+			a{
+				.def_btn();
+				float: right;
+				text-indent: 0;
+			}
+		}
+		> div[style]{
+			.moduleWrapperStyles();
+			padding: 30px 30px 0 !important;
+			font-size: 2rem;
+			border-bottom: none !important;
+		}
+		[id$="tblActivePages"], [id$="tblPendingPages"], [id$="tblExpiredPages"]{
+			.moduleWrapperStyles();
+			border-collapse: separate;
+			border-top: none !important;
+			padding: 10px 30px 30px !important;
+			+ div{
+				margin: 40px 0 0;
+			}
+		}
+	}
+}

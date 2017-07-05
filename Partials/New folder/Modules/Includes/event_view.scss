@@ -1,0 +1,256 @@
+body[class*="EventView"], .v35EvtView{
+
+	// Hide Spacers
+	[width="1"], [height="1"] { display: none; }
+	
+	// Admin Bar
+	#content > script + table{
+		margin: 35px 0 0;
+		display: inline-block;
+		width: auto !important;
+		position: absolute;
+		right: 5px;
+		z-index: 98;
+		// Hide Borders
+		tr{ display: none; }
+		// Show Content
+		tr:first-child + tr + tr{ display: table-row; }
+		input{
+			margin: 0 0 0 2px;
+		}
+	}
+	
+	// Checkout
+	[id$="_trCheckout"]{
+	    position: absolute;
+		top: -80px;
+		right: 5px;
+		width: auto;
+	}
+	
+	// Access Event Table
+	#content > [align="center"]{
+		margin: 65px 0 40px;
+		text-align: left;
+		display: block;
+		width: 100%;
+		position: relative;
+		> *, > * > *, > * > * > *{
+			display: block;
+			width: 100%;
+		}
+	}
+	[class$="EventLink"]{
+		font-size: 1.2rem;
+		padding: 0 0 0 0.8rem;
+		position: relative;
+		z-index: 98;
+		float: left;
+		color: #666;
+		&:active, &:hover{ text-decoration: none; color: @LinkColor; }
+	}
+	.nextNextEventLink{
+		float: right;
+		right: 1.2rem;
+	}
+	// View the Event
+	#eventView{
+		.moduleWrapperStyles();
+		position: relative;
+	}
+	[id^="eventFlyer"]{
+		a{
+			color: @LinkColor !important;
+			&:hover, &:active{
+				color: @LinkHoverColor !important;
+			}
+		}
+	}
+	
+	// Event Header
+	#eventHeader{
+		background: #FFF;
+		border-bottom: 1px solid #CCC;
+		height: 35px;
+		margin: 0 0 20px;
+		padding: 10px 0;
+	}
+	#eventHeaderBack{
+		width: auto;
+		font-size: 1.2rem;
+		padding-right: 1rem;
+		margin-right: 1rem;
+		border-right: 1px solid #ddd;
+		position: relative;
+		z-index: 99;
+		img{
+			height: 0;
+			width: 0;
+			margin: -0.2rem 0.2rem 0 0;
+			border: 0.6rem solid transparent;
+			border-right: 0.6rem solid #000;
+		}
+	}
+	#eventHeaderRightSpacer{
+		display: none;
+	}
+	#eventHeaderTitle{
+		padding: 0;
+		position: relative;
+		.TitleText{ display: none; }
+		img:last-child{
+			border-left: 0.6rem solid #000;
+			border-right: 0;
+			position: absolute;
+			right: 0;
+		}
+		img{ 
+			border: 0.6rem solid transparent;
+			border-right: 0.6rem solid #000;
+			height: 0;
+			width: 0;
+			float: left;
+			margin: 0.4rem 0 0;
+		}
+	}
+	#topLinkBar{
+		position: absolute;
+		top: 30px; left: 0; right: 0;
+		li{	font-size:  1.2rem; display: inline-block; padding: 0.5rem;	}
+	}
+	#eventDateTop, #eventDateBottom{
+		width: 75%;
+		margin: 0 auto;
+		padding: 1rem 0;
+		font-size: 1.4rem;
+	}
+	#eventDateTop{
+		padding-bottom: 3rem;
+	}
+	#eventDateBottom{
+		padding-top: 3rem;
+	}
+	#eventSummaryTop, #eventSummaryBottom{
+		font-size: 1.4rem;
+		width: 75%;
+		margin: 0 auto;
+		padding: 0;
+		img{
+			margin: 20px;
+			max-width: 100%;
+		}
+	}
+	#eventTitleTop, #eventTitleBottom{
+		display: block;
+		width: 75%;
+		border-bottom: 1px solid #CCC;
+		padding: 0 0 10px;
+		font-size: 2.1rem;
+	}
+	#eventTitleTop{
+		margin: 2rem auto 1rem;
+	}
+	#eventTitleBottom{
+		margin: 1rem auto 2rem;
+	}
+	#eventFlyer{
+		padding: 30px 0;
+	}
+}
+
+.NETEventInfo{
+	#Table6{
+		.moduleWrapperStyles();
+		padding: 0 30px 10px !important;
+		display: block;
+		border-bottom: none !important;
+		tr:first-child{
+			td{
+				width: 100%;
+			}
+		}
+		tr:last-child{
+			td:first-child{
+				width: 25%;
+			}
+			td:last-child{
+				width: 75%;
+			}
+		}
+	}
+	#Table1{
+		.moduleWrapperStyles();
+		padding: 10px 30px !important;
+		display: block;
+		border-top: none !important;
+		border-bottom: none !important;
+	}
+	#Table1 + table{
+		.moduleWrapperStyles();
+		padding: 10px 30px !important;
+		display: block;
+		border-top: none !important;
+		border-bottom: none !important;
+	}
+	#Table1 + table + table{
+		.moduleWrapperStyles();
+		padding: 10px 30px !important;
+		display: block;
+		border-top: none !important;
+		border-bottom: none !important;
+		> tbody > tr{
+			background: @LinkColor;
+			color: #FFF;
+			&:first-child{
+				td{
+					width: 100%;
+					text-align: center !important;
+				}
+			}
+			&:last-child{
+				td:first-child{
+					width: 25%;
+				}
+				td:last-child{
+					width: 75%;
+				}
+			}
+			td{
+				padding: 10px;
+			}
+			a{
+				color: #FFF;
+				&:hover, &:active{
+					color: #FFF;
+					border-bottom: 1px solid;
+				}
+			}
+		}
+	}
+	#eventReportWrapperDiv{
+		.moduleWrapperStyles();
+		padding: 10px 30px !important;
+		display: block;
+		border-top: none !important;
+		border-bottom: none !important;
+	}
+	#eventReportWrapperDiv + div{
+		.moduleWrapperStyles();
+		padding: 10px 30px !important;
+		display: block;
+		border-top: none !important;
+	}
+	#divActions{
+	    padding: 10px 10px 7px !important;
+		width: auto !important;
+		ul, li{
+			list-style: none !important;
+			list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) !important;
+			padding: 0;
+			margin: 0;
+		}
+		li{
+			margin: 0 0 3px;
+		}
+	}
+}

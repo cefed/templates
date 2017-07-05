@@ -1,0 +1,77 @@
+//Other fixes
+.Dgrp_ToolBoxTitleBar{
+	background: rgb(206,206,206);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, rgba(206,206,206,1) 0%, rgba(153,153,153,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(206,206,206,1) 0%,rgba(153,153,153,1) 100%);
+	background: linear-gradient(to bottom, rgba(206,206,206,1) 0%,rgba(153,153,153,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecece', endColorstr='#999999',GradientType=0 );
+	padding: 5px 20px;
+	margin: 0 0 10px;
+	height: auto;
+}
+.dpDiv{
+	background: #FFF;
+}
+.rcCalPopup{
+	transition: none !important;
+}
+.RadPicker input{
+	border: 1px solid #CCC !important;
+}
+#divSyncEvent{
+	margin: 0 !important;
+}
+
+// Tabbed Navigation
+.moduleTabsWrapper{
+	font-family: Tahoma, Geneva, sans-serif;
+	text-transform: uppercase;
+	margin: 20px 0 -1px;
+	padding: 0;
+	display: block;
+	position: relative;
+	z-index: 3;
+	border-collapse: initial;
+	*{
+		margin: 0;
+		height: auto !important;
+		width: auto !important;
+		font-size: 1.1rem;
+		letter-spacing: 0.1rem;
+	}
+	[class*="avTab"].hasText{
+		padding: 12px 18px !important;
+		margin: 0 2px;
+		transition: 0.3s;
+		border: 1px solid transparent;
+		a{
+			display: block;
+			transition: color 0.2s ease-in-out;
+			text-decoration: none;
+			margin: -10px -15px;
+			padding: 10px 15px !important;
+		}
+		&:hover{
+			border-color: #EEE;
+			border-bottom-color: transparent;
+			background: #FFF;
+			box-shadow: 0 3px 30px 3px rgba(0, 0, 0, 0.05);
+			a{
+				color: #666 !important;
+				border: none !important;
+				&:hover{
+					color: #666 !important;
+				}
+			}
+		}
+	}
+	// Add Styles to Active Tabs						
+	[class*="On"].hasText, [class*="ON"].hasText{
+		background: #FFF;
+		box-shadow: 0 3px 30px 3px rgba(0,0,0,0.05);
+		border: 1px solid #EEE;
+		border-bottom-color: transparent;
+		span{ border-bottom: 1px dashed #CCC; padding: 0 0 10px !important; margin: 0 0 -11px !important; }
+	}
+}// End Tabbed Navigation

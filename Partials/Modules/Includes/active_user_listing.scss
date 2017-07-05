@@ -1,0 +1,9 @@
+// Active User Listing
+
+.v35ActiveUserListing #Table1{
+	[width="10"]{ display: none; }
+	// Add Border, BG
+	@include moduleWrapperStyles();
+	// Padding to Content TD
+	> * > * > *{ padding: 30px !important; }
+}
