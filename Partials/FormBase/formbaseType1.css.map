@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;EACN,UAAU,EAAE,OAAkB;EAC9B,OAAO,EAAE,IAAI;EACb,aAAK;IACJ,KAAK,EAAE,IAAI;IACX,SAAS,EAAE,KAAK;IAChB,MAAM,EAAE,MAAM",
+"sources": ["formbaseType1.scss"],
+"names": [],
+"file": "formbaseType1.css"
+}

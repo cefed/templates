@@ -1,0 +1,46 @@
+/*
+Error: Invalid CSS after "...WrapperStyles()": expected "{", was ";"
+        on line 6 of E:\Stuff\Clubessential\Projects\2017\6_30 - FED Template\Partials\New folder\Modules\Includes\biz_db_report.scss
+
+1: // Yellow Book
+2: 
+3: .NETBizDBReport [id$="_tblContent"]{
+4: 	margin: 0 0 40px;
+5: 	// Add Border, BG
+6: 	.moduleWrapperStyles();
+7: 	// Add Padding to Content TDs
+8:    > * > * > td:first-child{ padding: 0 0 0 30px; }
+9:    > * > *:first-child > td{ padding: 30px 30px 0; }
+10:    > * > *:first-child + tr > td:first-child + td + td{ padding: 0 30px 0 0; }
+11:    > * > *:first-child + tr + tr > td:first-child + td{ padding: 0 30px 0 0; }
+
+Backtrace:
+E:\Stuff\Clubessential\Projects\2017\6_30 - FED Template\Partials\New folder\Modules\Includes\biz_db_report.scss:6
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...WrapperStyles()\": expected \"{\", was \";\"\A         on line 6 of E:\Stuff\Clubessential\Projects\2017\6_30 - FED Template\Partials\New folder\Modules\Includes\biz_db_report.scss\A \A 1: // Yellow Book\A 2: \A 3: .NETBizDBReport [id$=\"_tblContent\"]{\A 4: 	margin: 0 0 40px;\A 5: 	// Add Border, BG\A 6: 	.moduleWrapperStyles();\A 7: 	// Add Padding to Content TDs\A 8:    > * > * > td:first-child{ padding: 0 0 0 30px; }\A 9:    > * > *:first-child > td{ padding: 30px 30px 0; }\A 10:    > * > *:first-child + tr > td:first-child + td + td{ padding: 0 30px 0 0; }\A 11:    > * > *:first-child + tr + tr > td:first-child + td{ padding: 0 30px 0 0; }"; }

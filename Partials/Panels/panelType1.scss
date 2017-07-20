@@ -4,10 +4,7 @@
 		table-layout:fixed;
 		> * > * > *{ padding:0; }
 	}
-	@media(max-width:1024px){
-		padding:2rem;
-	}
-	@media(max-width:991px){
+	@media(max-width: 1024px){
 		> table, > table > *{ display:block; }
 		> table > * > *{ display:table;width:100%; }
 	}
@@ -40,26 +37,27 @@
 			}
 			> * > * > *:first-child{
 				width: 46%;
-				padding: 5rem 8rem;
+				padding: 50px 80px;
 				vertical-align: middle;
 				.mpContent{
-					@media(min-width: 992px){
-						width: 100%;
-						max-width: 600px;
-						margin-left: auto;
+					width: 100%;
+					max-width: 600px;
+					margin-left: auto;
+					@media(max-width: 1024px){
+						margin: 0 auto;
+						padding: 20px;
 					}
 				}
 				@media (max-width:1400px){
-					padding: 5rem 6rem;
+					padding: 50px 60px;
 				}
 				@media (max-width:1199px){
-					padding: 4rem;
+					padding: 40px;
 					width: 50%;
 				}
 				@media(max-width: 1024px){
 					display: table-footer-group;
 					width: 100%;
-					.mpContent{ padding: 2rem 0 0; }
 				}
 			}
 		}
@@ -90,27 +88,28 @@
 			}
 			> * > * > *:last-child{
 				width: 46%;
-				padding:5rem 8rem;
+				padding: 50px 80px;
 				vertical-align: middle;
 				background: rgb(242, 242, 242);
 				.mpContent{
-					@media(min-width: 992px){
-						width: 100%;
-						max-width: 600px;
-						margin-right: auto;
+					width: 100%;
+					max-width: 600px;
+					margin-right: auto;
+					@media(max-width: 1024px){
+						margin: 0 auto;
+						padding: 20px;
 					}
 				}
 				@media (max-width:1400px){
-					padding: 5rem 6rem;
+					padding: 50px 60px;
 				}
 				@media (max-width:1199px){
-					padding: 4rem;
+					padding: 40px;
 					width: 50%;
 				}
 				@media(max-width: 1024px){
 					display: table-footer-group;
 					width: 100%;
-					.mpContent{ padding: 2rem 0 0; }
 				}
 			}
 		}

@@ -1,0 +1,27 @@
+.subnav-2 {
+  padding: 10px 15px;
+  background: #f2f2f2;
+  text-align: center; }
+  .subnav-2 ul, .subnav-2 li {
+    display: inline-block;
+    padding: 0;
+    margin: 0; }
+  .subnav-2 li {
+    margin: 0 20px; }
+    @media (max-width: 768px) {
+      .subnav-2 li {
+        display: block;
+        margin: 0 0 10px; } }
+  .subnav-2 a {
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #777; }
+    .subnav-2 a:hover, .subnav-2 a:active {
+      color: #222; }
+  .subnav-2 li.selectedItem a {
+    color: #222; }
+
+/*# sourceMappingURL=subnavType2.css.map */

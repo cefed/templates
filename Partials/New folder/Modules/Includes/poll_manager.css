@@ -1,0 +1,43 @@
+/*
+Error: Invalid CSS after "...WrapperStyles()": expected "{", was ";"
+        on line 5 of E:\Stuff\Clubessential\Projects\2017\6_30 - FED Template\Partials\New folder\Modules\Includes\poll_manager.scss
+
+1: // Polling Manager
+2: 
+3: .PollManager [id$="_tblMainView"]{
+4: 	margin: 40px 0;
+5: 	.moduleWrapperStyles();
+6: 	> * > * > *{ padding: 0 30px 30px; }
+7: 	> * > *:first-child > *{ padding: 30px 30px 30px; }
+8: }
+
+Backtrace:
+E:\Stuff\Clubessential\Projects\2017\6_30 - FED Template\Partials\New folder\Modules\Includes\poll_manager.scss:5
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...WrapperStyles()\": expected \"{\", was \";\"\A         on line 5 of E:\Stuff\Clubessential\Projects\2017\6_30 - FED Template\Partials\New folder\Modules\Includes\poll_manager.scss\A \A 1: // Polling Manager\A 2: \A 3: .PollManager [id$=\"_tblMainView\"]{\A 4: 	margin: 40px 0;\A 5: 	.moduleWrapperStyles();\A 6: 	> * > * > *{ padding: 0 30px 30px; }\A 7: 	> * > *:first-child > *{ padding: 30px 30px 30px; }\A 8: }"; }

@@ -26,7 +26,7 @@
 		}
 	}
 	ul.counter{
-		position: absolute;
+		position: absolute; z-index: 2;
 		left: 0; right: 0; bottom: 0;
 		padding: 10px;
 		text-align: center;
@@ -36,7 +36,6 @@
 		vertical-align: middle;
 		padding: 20px 20px 20px 100px;
 		text-align: left;
-		text-shadow: 2px 0 2px rgba(0,0,0,0.5);
 		@media(max-width: 1199px){
 			padding: 20px 20px 20px 50px;
 		}

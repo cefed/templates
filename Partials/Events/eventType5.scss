@@ -1,3 +1,11 @@
 .events-5{
-
+	.cal-date{
+		.calMonth{
+			margin-right: 0.5rem;
+		}
+		br{ display: none; }
+	}
+	.cal-info{
+		h2{ margin-bottom: 50px; }
+	}
 }

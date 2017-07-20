@@ -1,0 +1,54 @@
+/*
+Error: Invalid CSS after "			.def_btn()": expected "{", was ";"
+        on line 25 of E:\Stuff\Clubessential\Projects\2017\6_30 - FED Template\Partials\New folder\Modules\Includes\calendar.scss
+
+20: 		right: 0;
+21: 		position: absolute;
+22: 		width: auto !important;
+23: 		color: transparent;
+24: 		a{
+25: 			.def_btn();
+26: 			float: right;
+27: 			img{ margin: -4px 0 -2px 3px; height: 14px; position: relative; }
+28: 		}
+29: 	}
+30: 	
+
+Backtrace:
+E:\Stuff\Clubessential\Projects\2017\6_30 - FED Template\Partials\New folder\Modules\Includes\calendar.scss:25
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:674:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"			.def_btn()\": expected \"{\", was \";\"\A         on line 25 of E:\Stuff\Clubessential\Projects\2017\6_30 - FED Template\Partials\New folder\Modules\Includes\calendar.scss\A \A 20: 		right: 0;\A 21: 		position: absolute;\A 22: 		width: auto !important;\A 23: 		color: transparent;\A 24: 		a{\A 25: 			.def_btn();\A 26: 			float: right;\A 27: 			img{ margin: -4px 0 -2px 3px; height: 14px; position: relative; }\A 28: 		}\A 29: 	}\A 30: 	"; }

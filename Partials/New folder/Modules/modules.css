@@ -1,0 +1,52 @@
+/*
+Error: Invalid CSS after "		background: ": expected expression (e.g. 1px, bold), was "@LinkColor;"
+        on line 17 of E:\Stuff\Clubessential\Projects\2017\6_30 - FED Template\Partials\New folder\Modules\modules.scss
+
+12: 		width: auto !important;
+13: 		padding: 1rem 1.4rem !important;
+14: 		margin: 0 0 0 0.42857rem;
+15: 		border: 0 !important;
+16: 		border-radius: 0;
+17: 		background: @LinkColor;
+18: 		font-family: @SansFont;
+19: 		font-weight: 400;
+20: 		font-size: 1.1rem;
+21: 		line-height: 1;
+22: 		letter-spacing: 0.1rem;
+
+Backtrace:
+E:\Stuff\Clubessential\Projects\2017\6_30 - FED Template\Partials\New folder\Modules\modules.scss:17
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/lexer.rb:229:in `expected!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/parser.rb:710:in `assert_expr'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/parser.rb:75:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1063:in `sass_script'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:909:in `value!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:778:in `block in try_declaration'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1183:in `call'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1183:in `rethrow'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:791:in `try_declaration'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"		background: \": expected expression (e.g. 1px, bold), was \"@LinkColor;\"\A         on line 17 of E:\Stuff\Clubessential\Projects\2017\6_30 - FED Template\Partials\New folder\Modules\modules.scss\A \A 12: 		width: auto !important;\A 13: 		padding: 1rem 1.4rem !important;\A 14: 		margin: 0 0 0 0.42857rem;\A 15: 		border: 0 !important;\A 16: 		border-radius: 0;\A 17: 		background: @LinkColor;\A 18: 		font-family: @SansFont;\A 19: 		font-weight: 400;\A 20: 		font-size: 1.1rem;\A 21: 		line-height: 1;\A 22: 		letter-spacing: 0.1rem;"; }

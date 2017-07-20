@@ -1,0 +1,21 @@
+.subnav-1 {
+  padding: 10px 0 30px; }
+  .subnav-1 ul, .subnav-1 li {
+    display: block;
+    padding: 0;
+    margin: 0; }
+  .subnav-1 li {
+    margin: 0 0 4px; }
+  .subnav-1 a {
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #AAA; }
+    .subnav-1 a:hover, .subnav-1 a:active {
+      color: #222; }
+  .subnav-1 li.selectedItem a {
+    color: #222; }
+
+/*# sourceMappingURL=subnavType1.css.map */

@@ -1,0 +1,49 @@
+/********** TYPE 1 **********/
+.subnav-1 {
+  padding: 10px 0 30px; }
+  .subnav-1 ul, .subnav-1 li {
+    display: block;
+    padding: 0;
+    margin: 0; }
+  .subnav-1 li {
+    margin: 0 0 4px; }
+  .subnav-1 a {
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #AAA; }
+    .subnav-1 a:hover, .subnav-1 a:active {
+      color: #222; }
+  .subnav-1 li.selectedItem a {
+    color: #222; }
+
+/********** TYPE 2 **********/
+.subnav-2 {
+  padding: 10px 15px;
+  background: #f2f2f2;
+  text-align: center; }
+  .subnav-2 ul, .subnav-2 li {
+    display: inline-block;
+    padding: 0;
+    margin: 0; }
+  .subnav-2 li {
+    margin: 0 20px; }
+    @media (max-width: 768px) {
+      .subnav-2 li {
+        display: block;
+        margin: 0 0 10px; } }
+  .subnav-2 a {
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #777; }
+    .subnav-2 a:hover, .subnav-2 a:active {
+      color: #222; }
+  .subnav-2 li.selectedItem a {
+    color: #222; }
+
+/*# sourceMappingURL=baseSubNav.css.map */

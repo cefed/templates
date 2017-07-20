@@ -64,6 +64,9 @@ section[class*="events"] td.plgHeaderBar:last-of-type{ display: none; }
     margin-bottom: 20px;
 	background: rgb(242, 242, 242);
 	text-align: center;
+	overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
 	.button{
 		display: inline-block;
 		padding: 15px 20px;

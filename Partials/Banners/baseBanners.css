@@ -1,0 +1,35 @@
+/********** TYPE 1 **********/
+.content-banner-1 {
+  position: relative;
+  background: #444; }
+  .content-banner-1 > .mpContent img {
+    width: 100%;
+    opacity: 0.5; }
+  .content-banner-1 > .clickToEditDiv {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0; }
+    @media (max-width: 768px) {
+      .content-banner-1 > .clickToEditDiv {
+        position: relative;
+        bottom: 10px; } }
+  .content-banner-1 .page-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; }
+    .content-banner-1 .page-title .mpContent {
+      font-family: serif;
+      font-size: 36px;
+      color: #FFF; }
+  @media (max-width: 768px) {
+    .content-banner-1 .page-title {
+      position: relative;
+      top: 0;
+      transform: none;
+      padding: 10px; } }
+
+/*# sourceMappingURL=baseBanners.css.map */

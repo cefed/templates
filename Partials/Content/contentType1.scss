@@ -12,6 +12,10 @@
 	}
 	aside{
 		width: 30%;
+		padding-right: 3rem;
+		@media(max-width: 991px){
+			padding-right: 0;
+		}
 	}
 	article{
 		width: 70%;
